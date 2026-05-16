@@ -17,7 +17,13 @@ export default function CategoryNav() {
           >
             <span>{cat.emoji}</span>
             {cat.label}
-          </button>
+        </button>
+        <a
+          href="/combo"
+          className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#e8f7fb] hover:bg-[#a8d8ea] text-[#5b9db3] font-semibold text-sm whitespace-nowrap transition-all hover:scale-105"
+        >
+          🛒 Combo
+        </a>
         ))}
         <button
           onClick={() => scroll("conjuntos")}
