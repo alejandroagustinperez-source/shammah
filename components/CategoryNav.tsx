@@ -21,7 +21,7 @@ export default function CategoryNav() {
         ))}
         <a
           href="/combo"
-          className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#e8f7fb] hover:bg-[#a8d8ea] text-[#5b9db3] font-semibold text-sm whitespace-nowrap transition-all hover:scale-105"
+          className="flex items-center gap-1.5 px-4 py-2 rounded-full bg-[#f0ecf8] hover:bg-[#d4b8e0] text-[#7b5ea7] font-semibold text-sm whitespace-nowrap transition-all hover:scale-105"
         >
           🛒 Combo
         </a>
