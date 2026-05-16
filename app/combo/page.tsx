@@ -20,7 +20,12 @@ export default function ComboPage() {
   const updateQty = (id: string, delta: number) => {
     setSelected((prev) => {
       const next = { ...prev };
-      const qty = (next[id] || 0) + delta;
+      const current = next[id] || 0;
+      if (delta > 0) {
+        const p = products.find((pr) => pr.id === id);
+        if (p?.category === "muneco" && current >= 1) return prev;
+      }
+      const qty = current + delta;
       if (qty <= 0) {
         delete next[id];
       } else {
@@ -74,6 +79,7 @@ export default function ComboPage() {
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                     {filtered.map((p) => {
                       const qty = selected[p.id] || 0;
+                      const isMuneco = p.category === "muneco";
                       return (
                         <div
                           key={p.id}
@@ -83,6 +89,17 @@ export default function ComboPage() {
                               : "border-[#f0ecf8] hover:shadow-sm"
                           }`}
                         >
+                          <div className="w-full aspect-square bg-[#faf8ff] rounded-xl flex items-center justify-center text-4xl mb-2 overflow-hidden">
+                            {p.images[0] && p.images[0] !== "/images/placeholder.jpg" ? (
+                              <img
+                                src={p.images[0]}
+                                alt={p.name}
+                                className="w-full h-full object-cover"
+                              />
+                            ) : (
+                              <span>{cat.emoji}</span>
+                            )}
+                          </div>
                           <p className="font-bold text-sm text-[#4a4a4a] mb-1">{p.name}</p>
                           <p className="text-xs text-[#9a9a9a] mb-2 line-clamp-2">{p.description}</p>
                           <p className="text-sm font-black text-[#2eab6b] mb-2">
@@ -101,7 +118,12 @@ export default function ComboPage() {
                               </span>
                               <button
                                 onClick={() => updateQty(p.id, 1)}
-                                className="w-7 h-7 rounded-full bg-[#d4b8e0] text-white font-bold hover:bg-[#b89ac8] transition-colors"
+                                disabled={isMuneco && qty >= 1}
+                                className={`w-7 h-7 rounded-full font-bold transition-colors ${
+                                  isMuneco && qty >= 1
+                                    ? "bg-gray-100 text-gray-300 cursor-not-allowed"
+                                    : "bg-[#d4b8e0] text-white hover:bg-[#b89ac8]"
+                                }`}
                               >
                                 +
                               </button>
