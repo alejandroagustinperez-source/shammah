@@ -137,12 +137,12 @@ export default function ProductCard({ product }: { product: Product }) {
             ${product.currentPrice.toLocaleString("es-AR")}
           </span>
         </div>
-        <div className="flex gap-2 mt-auto">
+        <div className="mt-auto flex flex-col gap-2">
           <a
           href={getWhatsAppUrl(whatsappMessage)}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center justify-center gap-2 flex-1 bg-[#25d366] hover:bg-[#1ebe5d] text-white font-bold py-2.5 px-4 rounded-full text-sm transition-all hover:scale-105"
+          className="flex items-center justify-center gap-2 w-full bg-[#25d366] hover:bg-[#1ebe5d] text-white font-bold py-2.5 px-4 rounded-full text-sm transition-all hover:scale-105"
         >
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
@@ -159,16 +159,16 @@ export default function ProductCard({ product }: { product: Product }) {
                   url: window.location.href,
                 })
               }
-              className="w-10 h-10 flex items-center justify-center rounded-full bg-[#f0ecf8] text-[#9b8bb4] hover:bg-[#d4b8e0] hover:text-white transition-all flex-shrink-0"
-              aria-label="Compartir"
+              className="flex items-center justify-center gap-1.5 w-full bg-transparent border border-[#d4b8e0] text-[#9b8bb4] hover:bg-[#f5f0fa] font-semibold py-2 px-4 rounded-full text-xs transition-all"
             >
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <circle cx="18" cy="5" r="3" />
                 <circle cx="6" cy="12" r="3" />
                 <circle cx="18" cy="19" r="3" />
                 <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
                 <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
               </svg>
+              Compartir 🔗
             </button>
           )}
         </div>
