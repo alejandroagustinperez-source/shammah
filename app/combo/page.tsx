@@ -44,6 +44,11 @@ export default function ComboPage() {
     [selected]
   );
 
+  const hasBabero = useMemo(
+    () => Object.keys(selected).some((id) => products.find((p) => p.id === id)?.category === "baberos"),
+    [selected]
+  );
+
   const whatsappMessage = useMemo(() => {
     const lines = Object.entries(selected)
       .map(([id, qty]) => {
@@ -51,8 +56,9 @@ export default function ComboPage() {
         return p ? `- ${p.name} x${qty} = $${(p.currentPrice * qty).toLocaleString("es-AR")}` : "";
       })
       .filter(Boolean);
-    return `Hola Shammah Bebe! Quiero armar este combo:\n\n${lines.join("\n")}\n\nTotal: $${total.toLocaleString("es-AR")}\n\nEstan disponibles?`;
-  }, [selected, total]);
+    const sizeQ = hasBabero ? "\n\n¿De cuántos meses es tu bebé?" : "";
+    return `Hola Shammah Bebe! Quiero armar este combo:\n\n${lines.join("\n")}\n\nTotal: $${total.toLocaleString("es-AR")}\n\nEstan disponibles?${sizeQ}`;
+  }, [selected, total, hasBabero]);
 
   const selectedCount = Object.values(selected).reduce((a, b) => a + b, 0);
 
@@ -111,6 +117,9 @@ export default function ComboPage() {
                           </div>
                           <p className="font-bold text-sm text-[#4a4a4a] mb-1">{p.name}</p>
                           <p className="text-xs text-[#9a9a9a] mb-1 line-clamp-2">{p.description}</p>
+                          {p.category === "baberos" && (
+                            <p className="text-[10px] font-semibold text-[#c0614a] mb-1">👶 Talle: 0 a 12 meses</p>
+                          )}
                           {p.category === "mantas" && (
                             <p className="text-[10px] font-bold text-[#c0614a] mb-2">🎨 El diseño se elige por WhatsApp</p>
                           )}

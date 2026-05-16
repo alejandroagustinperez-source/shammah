@@ -43,7 +43,8 @@ export default function ProductCard({ product }: { product: Product }) {
     return segments.slice(1).map((w) => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
   };
 
-  const whatsappMessage = `Hola Shammah Bebe!\n\nMe encanto este producto y quiero pedirlo:\n\n>> *${product.name}*\nModelo: ${currentModel()}\n\nTienen disponible?`;
+  const sizeQuestion = product.category === "baberos" ? "\n\n¿De cuántos meses es tu bebé?" : "";
+  const whatsappMessage = `Hola Shammah Bebe!\n\nMe encanto este producto y quiero pedirlo:\n\n>> *${product.name}*\nModelo: ${currentModel()}\n\nTienen disponible?${sizeQuestion}`;
 
   return (
     <div className="bg-white rounded-3xl shadow-sm border border-[#f0ecf8] overflow-hidden hover:shadow-md transition-all hover:-translate-y-1 flex flex-col">
@@ -121,6 +122,9 @@ export default function ProductCard({ product }: { product: Product }) {
         <h3 className="font-bold text-[#4a4a4a] text-base leading-tight">{product.name}</h3>
         <p className="text-xs text-[#ff6b6b] font-semibold">🔥 {viewers} personas viendo esto ahora</p>
         <p className="text-sm text-[#9a9a9a] leading-relaxed">{product.description}</p>
+        {product.category === "baberos" && (
+          <p className="text-xs font-semibold text-[#c0614a]">👶 Talle: 0 a 12 meses</p>
+        )}
         <div className="flex items-baseline gap-2 mt-1">
           <span className="price-original text-sm">
             ${product.originalPrice.toLocaleString("es-AR")}
