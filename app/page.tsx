@@ -5,6 +5,7 @@ import CategoryNav from "@/components/CategoryNav";
 import ProductGrid from "@/components/ProductGrid";
 import BundleSection from "@/components/BundleSection";
 import Testimonios from "@/components/Testimonios";
+import MediosDePago from "@/components/MediosDePago";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
 import Footer from "@/components/Footer";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <ProductGrid />
       <BundleSection />
       <Testimonios />
+      <MediosDePago />
       <Footer />
       <WhatsAppFloat />
     </main>
