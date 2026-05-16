@@ -129,11 +129,11 @@ export default function ProductCard({ product }: { product: Product }) {
         {product.category === "baberos" && (
           <p className="text-xs font-semibold text-[#c0614a]">👶 Talle: 0 a 12 meses</p>
         )}
-        <div className="flex items-baseline gap-2 mt-1">
-          <span className="price-original text-sm">
+        <div className="flex items-baseline gap-x-2 gap-y-0.5 flex-wrap mt-1">
+          <span className="price-original text-xs sm:text-sm">
             ${product.originalPrice.toLocaleString("es-AR")}
           </span>
-          <span className="text-2xl font-black text-[#2eab6b]">
+          <span className="text-xl sm:text-2xl font-black text-[#2eab6b]">
             ${product.currentPrice.toLocaleString("es-AR")}
           </span>
         </div>
