@@ -48,18 +48,18 @@ export default function ProductCard({ product }: { product: Product }) {
         )}
       </div>
       {product.images.length > 1 && (
-        <div className="flex justify-center gap-1.5 py-2 px-4 bg-[#faf8ff]">
+        <div className="flex gap-1.5 py-2 px-4 bg-[#faf8ff] overflow-x-auto">
           {product.images.map((src, i) => (
-            <button key={i} onClick={() => setImgIndex(i)}>
+            <button key={i} onClick={() => setImgIndex(i)} className="flex-shrink-0">
               {erroredThumbs[i] ? (
-                <div className="w-16 h-16 rounded-lg bg-[#f0ecf8]" />
+                <div className="w-14 h-14 rounded-lg bg-[#f0ecf8]" />
               ) : (
                 <Image
                   src={src}
                   alt={`${product.name} ${i + 1}`}
-                  width={64}
-                  height={64}
-                  style={{ width: "64px", height: "64px", objectFit: "cover" }}
+                  width={56}
+                  height={56}
+                  style={{ width: "56px", height: "56px", minWidth: "56px", objectFit: "cover" }}
                   onError={() =>
                     setErroredThumbs((prev) => ({ ...prev, [i]: true }))
                   }
