@@ -50,7 +50,7 @@ export const products: Product[] = [
       "/images/babero-liso-bordo.png",
       "/images/babero-liso-celeste.png",
       "/images/babero-liso-gris.png",
-      "/images/babero-liso-verde militar.png",
+      "/images/babero-liso-verde-militar.png",
     ],
     whatsappMessage: "Hola Shammah Bebé! Me interesa el Babero Liso 🍼 ¿Qué colores tienen disponibles?",
   },
