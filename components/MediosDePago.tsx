@@ -21,7 +21,8 @@ export default function MediosDePago() {
             <div className="w-14 h-14 rounded-full bg-[#a8d8ea]/20 flex items-center justify-center mx-auto mb-4 text-3xl">
               🏦
             </div>
-            <h3 className="font-bold text-[#4a4a4a] mb-2">Transferencia Bancaria</h3>
+            <h3 className="font-bold text-[#4a4a4a] mb-1">Transferencia Bancaria</h3>
+            <p className="text-sm text-[#9a9a9a]">Cualquier banco</p>
           </div>
           <div className="bg-[#fdfaf7] rounded-2xl border border-[#f0ecf8] p-6 hover:shadow-md transition-all hover:-translate-y-1">
             <div className="w-14 h-14 rounded-full bg-[#ffeaa7]/30 flex items-center justify-center mx-auto mb-4 text-3xl">
