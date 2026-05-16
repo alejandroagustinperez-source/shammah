@@ -91,7 +91,7 @@ export default function ProductCard({ product }: { product: Product }) {
               ›
             </button>
           )}
-          <div ref={thumbsRef} className="flex gap-1.5 overflow-x-auto overflow-y-hidden scrollbar-hide">
+          <div ref={thumbsRef} className="flex gap-1.5 overflow-x-auto overflow-y-hidden scrollbar-hide p-1">
             {product.images.map((src, i) => (
               <button key={i} onClick={() => setImgIndex(i)} className="flex-shrink-0">
                 {erroredThumbs[i] ? (
