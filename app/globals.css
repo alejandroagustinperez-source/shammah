@@ -1,26 +1,36 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@theme {
+  --font-nunito: var(--font-nunito), sans-serif;
+  --font-pacifico: var(--font-pacifico), cursive;
+  --color-celeste: #a8d8ea;
+  --color-lavanda: #d4b8e0;
+  --color-durazno: #ffb6a3;
+  --color-amarillo: #ffeaa7;
+  --color-crema: #fdfaf7;
+  --color-texto: #4a4a4a;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-nunito), sans-serif;
+  color: var(--color-texto);
+}
+
+.font-display {
+  font-family: var(--font-pacifico), cursive;
+}
+
+.price-original {
+  text-decoration: line-through;
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.badge-descuento {
+  background: #ff6b6b;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 999px;
 }
