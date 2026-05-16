@@ -31,6 +31,8 @@ export default function ProductCard({ product }: { product: Product }) {
 
   const scrollThumbs = (dir: "left" | "right") => {
     thumbsRef.current?.scrollBy({ left: dir === "left" ? -120 : 120, behavior: "smooth" });
+  };
+
   const discount = Math.round(
     ((product.originalPrice - product.currentPrice) / product.originalPrice) * 100
   );
