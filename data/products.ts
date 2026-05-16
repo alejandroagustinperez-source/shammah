@@ -69,7 +69,7 @@ export const products: Product[] = [
       "/images/babero-cuadrados-celeste.png",
       "/images/babero-espacial-gris.png",
       "/images/babero-koala-blanco.png",
-      "/images/babero-nevado-verde agua.png",
+      "/images/babero-nevado-verde-agua.png",
       "/images/babero-obeja-amarillo.png",
       "/images/babero-ositos-blanco.png",
       "/images/babero-peces-blanco.png",
