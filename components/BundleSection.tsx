@@ -9,7 +9,7 @@ export default function BundleSection() {
           <h2 className="font-display text-2xl text-[#c0614a]">Conjuntos Especiales</h2>
           <div className="flex-1 h-px bg-[#f5c8bb]" />
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {bundles.map((bundle) => {
             const discount = Math.round(
               ((bundle.originalPrice - bundle.currentPrice) / bundle.originalPrice) * 100
@@ -63,6 +63,44 @@ export default function BundleSection() {
               </div>
             );
           })}
+          {/* Card de combo personalizado */}
+          <div className="bg-[#fdfaf7] rounded-3xl border-2 border-dashed border-[#d4b8e0] shadow-sm overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col">
+            <div className="bg-gradient-to-r from-[#ede0f5] to-[#fde8e2] px-6 py-5">
+              <h3 className="font-extrabold text-xl text-[#c0614a]">🛒 Armá tu propio combo</h3>
+              <p className="text-[#9a7a7a] text-sm mt-1">
+                Elegí los productos que quieras y calculá el precio al instante
+              </p>
+            </div>
+            <div className="px-6 py-4 flex flex-col flex-1">
+              <p className="text-xs font-semibold text-[#b0b0b0] uppercase tracking-wide mb-2">
+                ¿Cómo funciona?
+              </p>
+              <ul className="text-sm text-[#7a7a7a] space-y-1 mb-4 flex-1">
+                <li className="flex items-center gap-1.5">
+                  <span className="text-[#d4b8e0]">✦</span>
+                  Seleccioná los productos que más te gusten
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <span className="text-[#d4b8e0]">✦</span>
+                  Elegí las cantidades de cada uno
+                </li>
+                <li className="flex items-center gap-1.5">
+                  <span className="text-[#d4b8e0]">✦</span>
+                  Envianos el pedido por WhatsApp
+                </li>
+              </ul>
+              <a
+                href="/combo"
+                className="flex items-center justify-center gap-2 w-full bg-[#d4b8e0] hover:bg-[#c4a8d0] text-white font-bold py-3 px-4 rounded-full transition-all hover:scale-105"
+              >
+                Armar combo
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14" />
+                  <path d="m12 5 7 7-7 7" />
+                </svg>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
