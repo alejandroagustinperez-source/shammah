@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import { Product, getWhatsAppUrl } from "@/data/products";
 
@@ -8,6 +8,29 @@ export default function ProductCard({ product }: { product: Product }) {
   const [erroredThumbs, setErroredThumbs] = useState<Record<number, boolean>>({});
   const [viewers, setViewers] = useState(0);
   useEffect(() => setViewers(Math.floor(Math.random() * 10) + 3), []);
+  const thumbsRef = useRef<HTMLDivElement>(null);
+  const [canScrollL, setCanScrollL] = useState(false);
+  const [canScrollR, setCanScrollR] = useState(false);
+
+  const checkScroll = () => {
+    const el = thumbsRef.current;
+    if (el) {
+      setCanScrollL(el.scrollLeft > 4);
+      setCanScrollR(el.scrollLeft < el.scrollWidth - el.clientWidth - 4);
+    }
+  };
+
+  useEffect(() => {
+    const el = thumbsRef.current;
+    if (el) {
+      checkScroll();
+      el.addEventListener("scroll", checkScroll);
+      return () => el.removeEventListener("scroll", checkScroll);
+    }
+  }, [product.images.length]);
+
+  const scrollThumbs = (dir: "left" | "right") => {
+    thumbsRef.current?.scrollBy({ left: dir === "left" ? -120 : 120, behavior: "smooth" });
   const discount = Math.round(
     ((product.originalPrice - product.currentPrice) / product.originalPrice) * 100
   );
@@ -48,30 +71,48 @@ export default function ProductCard({ product }: { product: Product }) {
         )}
       </div>
       {product.images.length > 1 && (
-        <div className="flex gap-1.5 py-2 px-4 bg-[#faf8ff] overflow-x-auto">
-          {product.images.map((src, i) => (
-            <button key={i} onClick={() => setImgIndex(i)} className="flex-shrink-0">
-              {erroredThumbs[i] ? (
-                <div className="w-14 h-14 rounded-lg bg-[#f0ecf8]" />
-              ) : (
-                <Image
-                  src={src}
-                  alt={`${product.name} ${i + 1}`}
-                  width={56}
-                  height={56}
-                  style={{ width: "56px", height: "56px", minWidth: "56px", objectFit: "cover" }}
-                  onError={() =>
-                    setErroredThumbs((prev) => ({ ...prev, [i]: true }))
-                  }
-                  className={`rounded-lg bg-[#f5f5f5] border transition-all ${
-                    i === imgIndex
-                      ? "border-2 border-[#9b8bb4] scale-110"
-                      : "opacity-70 hover:opacity-100 border-gray-200"
-                  }`}
-                />
-              )}
+        <div className="relative py-2 px-4 bg-[#faf8ff]">
+          {canScrollL && (
+            <button
+              onClick={() => scrollThumbs("left")}
+              className="absolute left-1 top-1/2 -translate-y-1/2 z-10 w-6 h-6 flex items-center justify-center rounded-full bg-white/80 shadow text-[#9b8bb4] text-sm font-bold hover:bg-white"
+            >
+              ‹
             </button>
-          ))}
+          )}
+          {canScrollR && (
+            <button
+              onClick={() => scrollThumbs("right")}
+              className="absolute right-1 top-1/2 -translate-y-1/2 z-10 w-6 h-6 flex items-center justify-center rounded-full bg-white/80 shadow text-[#9b8bb4] text-sm font-bold hover:bg-white"
+            >
+              ›
+            </button>
+          )}
+          <div ref={thumbsRef} className="flex gap-1.5 overflow-x-auto scrollbar-hide">
+            {product.images.map((src, i) => (
+              <button key={i} onClick={() => setImgIndex(i)} className="flex-shrink-0">
+                {erroredThumbs[i] ? (
+                  <div className="w-14 h-14 rounded-lg bg-[#f0ecf8]" />
+                ) : (
+                  <Image
+                    src={src}
+                    alt={`${product.name} ${i + 1}`}
+                    width={56}
+                    height={56}
+                    style={{ width: "56px", height: "56px", minWidth: "56px", objectFit: "cover" }}
+                    onError={() =>
+                      setErroredThumbs((prev) => ({ ...prev, [i]: true }))
+                    }
+                    className={`rounded-lg bg-[#f5f5f5] border transition-all ${
+                      i === imgIndex
+                        ? "border-2 border-[#9b8bb4] scale-110"
+                        : "opacity-70 hover:opacity-100 border-gray-200"
+                    }`}
+                  />
+                )}
+              </button>
+            ))}
+          </div>
         </div>
       )}
       <div className="p-4 pt-3 flex flex-col flex-1 gap-1.5">
