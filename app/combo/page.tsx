@@ -101,7 +101,10 @@ export default function ComboPage() {
                             )}
                           </div>
                           <p className="font-bold text-sm text-[#4a4a4a] mb-1">{p.name}</p>
-                          <p className="text-xs text-[#9a9a9a] mb-2 line-clamp-2">{p.description}</p>
+                          <p className="text-xs text-[#9a9a9a] mb-1 line-clamp-2">{p.description}</p>
+                          {p.category === "mantas" && (
+                            <p className="text-[10px] font-bold text-[#c0614a] mb-2">🎨 El diseño se elige por WhatsApp</p>
+                          )}
                           <p className="text-sm font-black text-[#2eab6b] mb-2">
                             ${p.currentPrice.toLocaleString("es-AR")}
                           </p>
