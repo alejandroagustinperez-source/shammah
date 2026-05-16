@@ -74,11 +74,11 @@ export default function ProductCard({ product }: { product: Product }) {
           ))}
         </div>
       )}
-      <div className="p-4 flex flex-col flex-1">
-        <h3 className="font-bold text-[#4a4a4a] text-base mb-1">{product.name}</h3>
-        <p className="text-xs text-[#ff6b6b] font-semibold mb-1">🔥 {viewers} personas viendo esto ahora</p>
-        <p className="text-sm text-[#9a9a9a] mb-3">{product.description}</p>
-        <div className="flex items-baseline gap-2 mb-3">
+      <div className="p-4 pt-3 flex flex-col flex-1 gap-1.5">
+        <h3 className="font-bold text-[#4a4a4a] text-base leading-tight">{product.name}</h3>
+        <p className="text-xs text-[#ff6b6b] font-semibold">🔥 {viewers} personas viendo esto ahora</p>
+        <p className="text-sm text-[#9a9a9a] leading-relaxed">{product.description}</p>
+        <div className="flex items-baseline gap-2 mt-1">
           <span className="price-original text-sm">
             ${product.originalPrice.toLocaleString("es-AR")}
           </span>
