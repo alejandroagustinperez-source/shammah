@@ -33,6 +33,24 @@ export default function ProductCard({ product }: { product: Product }) {
     }
   }, [product.images.length]);
 
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+
+  useEffect(() => {
+    if (lightboxOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    const handleKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightboxOpen(false);
+    };
+    window.addEventListener("keydown", handleKey);
+    return () => {
+      document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKey);
+    };
+  }, [lightboxOpen]);
+
   const scrollThumbs = (dir: "left" | "right") => {
     thumbsRef.current?.scrollBy({ left: dir === "left" ? -120 : 120, behavior: "smooth" });
   };
@@ -54,14 +72,16 @@ export default function ProductCard({ product }: { product: Product }) {
     <div className="bg-white rounded-3xl shadow-sm border border-[#f0ecf8] overflow-hidden hover:shadow-md transition-all hover:-translate-y-1 flex flex-col">
       <div className={`relative bg-[#faf8ff] ${product.category === "muneco" ? "aspect-square" : "aspect-[3/4]"} overflow-hidden`}>
         {product.images.length > 0 && product.images[0] !== "/images/placeholder.jpg" ? (
-          <Image
-            src={product.images[imgIndex]}
-            alt={product.name}
-            fill
-            sizes="(max-width: 768px) 50vw, 33vw"
-            loading="lazy"
-            className={product.category === "muneco" ? "object-contain p-4" : "object-cover"}
-          />
+          <button type="button" onClick={() => setLightboxOpen(true)} className="w-full h-full cursor-zoom-in">
+            <Image
+              src={product.images[imgIndex]}
+              alt={product.name}
+              fill
+              sizes="(max-width: 768px) 50vw, 33vw"
+              loading="lazy"
+              className={product.category === "muneco" ? "object-contain p-4" : "object-cover"}
+            />
+          </button>
         ) : (
           <div className="w-full h-full flex items-center justify-center text-6xl">
             {product.category === "baberos" && "🍼"}
@@ -178,6 +198,30 @@ export default function ProductCard({ product }: { product: Product }) {
           )}
         </div>
       </div>
+      {lightboxOpen && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/80 flex items-center justify-center p-4"
+          onClick={() => setLightboxOpen(false)}
+        >
+          <div className="relative max-w-[90vw] max-h-[90vh] w-full h-full flex items-center justify-center">
+            <Image
+              src={product.images[imgIndex]}
+              alt={product.name}
+              fill
+              sizes="90vw"
+              className="object-contain"
+              onClick={(e) => e.stopPropagation()}
+            />
+          </div>
+          <button
+            type="button"
+            onClick={() => setLightboxOpen(false)}
+            className="absolute top-4 right-4 w-10 h-10 flex items-center justify-center rounded-full bg-white/20 hover:bg-white/30 text-white text-xl transition-colors"
+          >
+            ✕
+          </button>
+        </div>
+      )}
     </div>
   );
 }
