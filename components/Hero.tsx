@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { getWhatsAppUrl } from "@/data/products";
 
 export default function Hero() {
@@ -8,11 +9,12 @@ export default function Hero() {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
         <div className="flex-1 text-center md:text-left">
           <div className="flex justify-center md:justify-start mb-4">
-            <img
+            <Image
               src="/logo.png"
               alt="Shammah Bebé"
               width={180}
               height={180}
+              priority
               className="drop-shadow-md"
             />
           </div>

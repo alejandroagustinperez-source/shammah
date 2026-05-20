@@ -54,10 +54,13 @@ export default function ProductCard({ product }: { product: Product }) {
     <div className="bg-white rounded-3xl shadow-sm border border-[#f0ecf8] overflow-hidden hover:shadow-md transition-all hover:-translate-y-1 flex flex-col">
       <div className={`relative bg-[#faf8ff] ${product.category === "muneco" ? "aspect-square" : "aspect-[3/4]"} overflow-hidden`}>
         {product.images.length > 0 && product.images[0] !== "/images/placeholder.jpg" ? (
-          <img
+          <Image
             src={product.images[imgIndex]}
             alt={product.name}
-            style={{ width: "100%", height: "100%", objectFit: product.category === "muneco" ? "contain" : "cover" }}
+            fill
+            sizes="(max-width: 768px) 50vw, 33vw"
+            loading="lazy"
+            className={product.category === "muneco" ? "object-contain p-4" : "object-cover"}
           />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-6xl">
@@ -104,8 +107,10 @@ export default function ProductCard({ product }: { product: Product }) {
                   <Image
                     src={src}
                     alt={`${product.name} ${i + 1}`}
-                    width={56}
-                    height={56}
+                    width={80}
+                    height={80}
+                    quality={60}
+                    loading={i === 0 ? undefined : "lazy"}
                     style={{ width: "56px", height: "56px", minWidth: "56px", objectFit: "cover" }}
                     onError={() =>
                       setErroredThumbs((prev) => ({ ...prev, [i]: true }))
