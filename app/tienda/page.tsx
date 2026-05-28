@@ -41,7 +41,16 @@ const allCategories: TiendaCategory[] = [
 
 const mlProductsMap: Record<string, MLProduct[]> = {
   cunas: [
-    { name: "Cuna Montessori de Madera", price: 45000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Cuna" },
+    {
+      name: "Cuna Colecho Con Colchon Baranda Desmontable Escritorio 5en1 Blanco",
+      price: 178186,
+      originalPrice: 217300,
+      discount: "18% OFF",
+      badge: "Más vendido",
+      image: "https://meli.la/1HDPjJC",
+      href: "https://meli.la/1HDPjJC",
+      installments: "6 cuotas de $39.557",
+    },
     { name: "Cuna Plegable Portátil", price: 32000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Cuna+Portatil", badge: "Más vendido" },
   ],
   "silla-auto": [
