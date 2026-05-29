@@ -646,6 +646,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_815962-MLA99991261065_112025-F.webp",
       href: "https://meli.la/2pbXdED",
     },
+    {
+      name: "Baby Monitor Babycall Gadnic Cambeb48 Audio Bidireccional Pantalla Lcd 2 Visión",
+      price: 60899,
+      originalPrice: 246949,
+      discount: "75% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_988771-MLA99932748559_112025-F.webp",
+      href: "https://meli.la/2WZzN6d",
+      installments: "6 cuotas de $13.519",
+    },
   ],
   piso: [
     { name: "Piso Encastrable 60x60 6uds", price: 18000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Piso" },
