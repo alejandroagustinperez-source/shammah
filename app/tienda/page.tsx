@@ -196,6 +196,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_831516-MLA99335361420_112025-F.webp",
       href: "https://meli.la/1BkSsXp",
     },
+    {
+      name: "Pañales Unisex Premium Care Pants 46uds XXXG Pampers Sin Género",
+      price: 32999,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_933219-MLA101577639861_122025-F.webp",
+      href: "https://meli.la/2ztK6dM",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
