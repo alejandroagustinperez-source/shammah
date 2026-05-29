@@ -512,7 +512,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   "manta-caminadora": [
-    { name: "Manta Caminadora Antideslizante", price: 12500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Manta+Caminadora" },
+    {
+      name: "Mega Baby Manta Corralito Gimnasio Didáctica Bebe 3 En 1 Con Pelotas",
+      price: 100572,
+      originalPrice: 106991,
+      discount: "6% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_763496-MLA88303387775_072025-F.webp",
+      href: "https://meli.la/1JGQLWi",
+      installments: "6 cuotas de $16.762",
+    },
     { name: "Manta Caminadora con Arco Musical", price: 16500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Manta+Musical", badge: "Más vendido" },
   ],
   "manta-sensorial": [
