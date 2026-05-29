@@ -311,7 +311,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_807930-MLA109813090946_042026-F.webp",
       href: "https://meli.la/1iyDSeh",
     },
-    { name: "Biberón de Vidrio 150ml", price: 3600, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Biberon+Vidrio", badge: "Más vendido" },
+    {
+      name: "Set Recien Nacido Avent Natural Response Biberones Mamaderas",
+      price: 63942,
+      originalPrice: 76500,
+      discount: "16% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_737100-MLA99504840732_112025-F.webp",
+      href: "https://meli.la/12MYse4",
+      installments: "6 cuotas de $14.195",
+    },
   ],
   "saca-leche": [
     { name: "Saca Leche Eléctrico Doble", price: 38000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Saca+Leche" },
