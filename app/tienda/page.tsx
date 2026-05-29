@@ -302,7 +302,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   biberon: [
-    { name: "Biberón Anti-cólicos 240ml", price: 4800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Biberon" },
+    {
+      name: "Set X5 Cepillos Limpadores De Botellas Mamaderas Biberones Jarras Vasos",
+      price: 11999,
+      originalPrice: 38999,
+      discount: "69% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_807930-MLA109813090946_042026-F.webp",
+      href: "https://meli.la/1iyDSeh",
+    },
     { name: "Biberón de Vidrio 150ml", price: 3600, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Biberon+Vidrio", badge: "Más vendido" },
   ],
   "saca-leche": [
