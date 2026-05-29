@@ -639,6 +639,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/2mjRDKp",
       installments: "6 cuotas de $27.039",
     },
+    {
+      name: "Baby Call Cámara De Seguridad Wifi Visión Nocturna",
+      price: 31040,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_815962-MLA99991261065_112025-F.webp",
+      href: "https://meli.la/2pbXdED",
+    },
   ],
   piso: [
     { name: "Piso Encastrable 60x60 6uds", price: 18000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Piso" },
