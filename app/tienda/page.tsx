@@ -570,6 +570,14 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1vCjHF8",
       installments: "6 cuotas de $13.970",
     },
+    {
+      name: "Silla Comer Bebé Mega Baby Venecia Doble Bandeja Y Juguetes Color Beige",
+      price: 94145,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_741939-MLA110167117214_042026-F.webp",
+      href: "https://meli.la/19YbbYm",
+      installments: "9 cuotas de $10.460",
+    },
   ],
   camara: [
     { name: "Cámara de Vigilancia WiFi Bebé", price: 22000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Camara" },
