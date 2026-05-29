@@ -532,7 +532,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   aspirador: [
-    { name: "Aspirador Nasal Eléctrico", price: 8500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Aspirador" },
+    {
+      name: "Aspirador Nasal Gadnic Eléctrico Automático Silencioso Bebes Lavable",
+      price: 60349,
+      originalPrice: 65999,
+      discount: "8% OFF",
+      badge: "Oferta imperdible",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_996027-MLA100385479993_122025-F.webp",
+      href: "https://meli.la/1LGbpu9",
+      installments: "6 cuotas de $13.397",
+    },
     { name: "Aspirador Nasal Manual Perilla", price: 2800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Aspirador+Manual" },
   ],
   "silla-comer": [
