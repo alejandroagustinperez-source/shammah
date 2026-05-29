@@ -434,6 +434,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_983726-MLA95393548732_102025-F.webp",
       href: "https://meli.la/15yCuDm",
     },
+    {
+      name: "Bañera Avanti Mid Ultra Plegable + Reductor Termometro",
+      price: 46206,
+      originalPrice: 99901,
+      discount: "53% OFF",
+      badge: "Oferta imperdible",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_878665-MLA107415458167_022026-F.webp",
+      href: "https://meli.la/1oKgrjt",
+      installments: "12 cuotas de $3.850",
+    },
   ],
   jabon: [
     { name: "Jabón pH Neutro Bebé 500ml", price: 3800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Jabon+Bebe" },
