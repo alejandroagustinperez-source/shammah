@@ -224,6 +224,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_998885-MLA99927800429_112025-F.webp",
       href: "https://meli.la/1sZyCWo",
     },
+    {
+      name: "Pañales Pampers Deluxe Protection Talle G 44 Un Grande Sin Género",
+      price: 30744,
+      originalPrice: 52028,
+      discount: "40% OFF",
+      badge: "Oferta imperdible",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_755978-MLA99451953736_112025-F.webp",
+      href: "https://meli.la/33M4y1o",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
