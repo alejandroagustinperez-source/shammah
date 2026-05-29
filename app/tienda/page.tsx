@@ -522,7 +522,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1JGQLWi",
       installments: "6 cuotas de $16.762",
     },
-    { name: "Manta Caminadora con Arco Musical", price: 16500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Manta+Musical", badge: "Más vendido" },
+    {
+      name: "Manta Caminador 2 En 1 Mega Baby Gimnasio Alfombra Didactica",
+      price: 37924,
+      originalPrice: 44617,
+      discount: "15% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_858933-MLA96146061631_102025-F.webp",
+      href: "https://meli.la/2KxiCzJ",
+    },
   ],
   "manta-sensorial": [
     { name: "Manta Sensorial Texturas", price: 9800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Manta+Sensorial" },
