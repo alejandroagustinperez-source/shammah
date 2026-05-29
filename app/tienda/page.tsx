@@ -71,6 +71,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/2LU8B6m",
       installments: "6 cuotas de $31.984",
     },
+    {
+      name: "Cuna Con Colchon Ruedas Con Freno Colecho Escritorio 5 En 1 Blanco",
+      price: 193356,
+      originalPrice: 235800,
+      discount: "18% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_924820-MLA109857297762_042026-F.webp",
+      href: "https://meli.la/1yYQHrx",
+      installments: "6 cuotas de $42.925",
+    },
   ],
   "silla-auto": [
     { name: "Silla de Auto Grupo 0/1", price: 28000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Silla+Auto" },
