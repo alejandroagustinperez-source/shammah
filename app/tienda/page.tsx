@@ -658,7 +658,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   piso: [
-    { name: "Piso Encastrable 60x60 6uds", price: 18000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Piso" },
+    {
+      name: "Piso Encastrable De Goma Eva Con Bordes Texturizado Negro Pack De 4 Piezas",
+      price: 21990,
+      originalPrice: 35990,
+      discount: "38% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_613140-MLA111356582607_052026-F.webp",
+      href: "https://meli.la/2V6xyAE",
+    },
     { name: "Piso Encastrable de Letras", price: 14500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Piso+Letras", badge: "Más vendido" },
   ],
 };
