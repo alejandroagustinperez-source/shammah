@@ -217,6 +217,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_909232-MLA99818421729_112025-F.webp",
       href: "https://meli.la/2PVRmkW",
     },
+    {
+      name: "Pañales Babysec Premium Soft Violeta Hiper XXG De 30u +13kg Tamaño Extra Grande",
+      price: 16899,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_998885-MLA99927800429_112025-F.webp",
+      href: "https://meli.la/1sZyCWo",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
