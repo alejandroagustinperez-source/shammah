@@ -210,6 +210,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_713396-MLA101779394650_122025-F.webp",
       href: "https://meli.la/26nsYfN",
     },
+    {
+      name: "Pañales Pampers Babydry Recien Nacido RN+ 36u Sin Género",
+      price: 18524,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_909232-MLA99818421729_112025-F.webp",
+      href: "https://meli.la/2PVRmkW",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
