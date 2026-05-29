@@ -416,6 +416,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1cyftUQ",
       installments: "6 cuotas de $10.500",
     },
+    {
+      name: "Bañera Plegable Avanti Fresh Reductor + Termómetro",
+      price: 34676,
+      originalPrice: 70767,
+      discount: "51% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_800807-MLA89090534578_082025-F.webp",
+      href: "https://meli.la/1VU6i5v",
+    },
   ],
   jabon: [
     { name: "Jabón pH Neutro Bebé 500ml", price: 3800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Jabon+Bebe" },
