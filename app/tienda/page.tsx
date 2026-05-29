@@ -503,7 +503,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   oleo: [
-    { name: "Óleo Calcáreo Crema X50g", price: 4200, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Oleo+Calcareo" },
+    {
+      name: "Oleo Calcareo Estrella Baby Sin Fragancia X 950 Ml Con Extracto De Algodon",
+      price: 9918,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_615448-MLA99440537480_112025-F.webp",
+      href: "https://meli.la/1sdKo8S",
+    },
     { name: "Óleo Calcáreo Aceite 100ml", price: 3500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Oleo+Aceite" },
   ],
   "manta-caminadora": [
