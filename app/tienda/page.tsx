@@ -256,6 +256,12 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_750203-MLA99387217930_112025-F.webp",
       href: "https://meli.la/2VaGT8y",
     },
+    {
+      name: "Pañal Huggies Protect Plus XXXG X48 Extra Extra Extra Grande",
+      price: 26992,
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_843814-MLA99435061932_112025-F.webp",
+      href: "https://meli.la/2kBvLAe",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
