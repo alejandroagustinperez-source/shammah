@@ -61,6 +61,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1YFWoab",
       installments: "6 cuotas de $44.282",
     },
+    {
+      name: "Cuna Colecho Convertible 6en1 | Incluye Colchón - 100x50 Cm Blanco",
+      price: 191905,
+      originalPrice: 230205,
+      discount: "16% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_669731-MLA95625301714_102025-F.webp",
+      href: "https://meli.la/2LU8B6m",
+      installments: "6 cuotas de $31.984",
+    },
   ],
   "silla-auto": [
     { name: "Silla de Auto Grupo 0/1", price: 28000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Silla+Auto" },
