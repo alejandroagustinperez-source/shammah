@@ -300,7 +300,6 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_759526-MLA105238408294_012026-F.webp",
       href: "https://meli.la/1KLFg98",
     },
-    { name: "Chupete Ortopédico Noche", price: 3200, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete+Ortho" },
   ],
   biberon: [
     { name: "Biberón Anti-cólicos 240ml", price: 4800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Biberon" },
