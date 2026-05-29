@@ -629,6 +629,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1wWc39Y",
       installments: "6 cuotas de $27.039",
     },
+    {
+      name: "Baby Monitor Gadnic Pantalla Lcd 4.3 Vision Nocturna Audio 2 Vias Vox Bateria",
+      price: 121799,
+      originalPrice: 237849,
+      discount: "48% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_963402-MLA99536300998_122025-F.webp",
+      href: "https://meli.la/2mjRDKp",
+      installments: "6 cuotas de $27.039",
+    },
   ],
   piso: [
     { name: "Piso Encastrable 60x60 6uds", price: 18000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Piso" },
