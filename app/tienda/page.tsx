@@ -510,7 +510,6 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_615448-MLA99440537480_112025-F.webp",
       href: "https://meli.la/1sdKo8S",
     },
-    { name: "Óleo Calcáreo Aceite 100ml", price: 3500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Oleo+Aceite" },
   ],
   "manta-caminadora": [
     { name: "Manta Caminadora Antideslizante", price: 12500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Manta+Caminadora" },
