@@ -552,7 +552,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   "silla-comer": [
-    { name: "Silla de Comer Plegable", price: 24000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Silla+Comer" },
+    {
+      name: "Silla Comer Bebe Plegable Baby Pops 2 En 1 Celeste Con Ruedas",
+      price: 87897,
+      originalPrice: 137339,
+      discount: "36% OFF",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_827116-MLA106091185635_012026-F.webp",
+      href: "https://meli.la/32M4pLM",
+      installments: "6 cuotas de $19.513",
+    },
     { name: "Silla de Comer de Madera", price: 32000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Silla+Madera", badge: "Más vendido" },
   ],
   camara: [
