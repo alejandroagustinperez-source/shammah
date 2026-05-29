@@ -103,6 +103,14 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/2JyaEjZ",
       installments: "6 cuotas de $29.417",
     },
+    {
+      name: "Butaca Booster Auto Bebé Mega Baby Daytona I-size 9 A 36 Kg Color Gris",
+      price: 121579,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_993247-MLA111275265241_052026-F.webp",
+      href: "https://meli.la/2aBa7aN",
+      installments: "6 cuotas de $26.990",
+    },
   ],
   cochecito: [
     { name: "Cochecito de Paseo Reclinable", price: 55000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Cochecito" },
