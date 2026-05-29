@@ -276,6 +276,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_718188-MLA110864868214_052026-F.webp",
       href: "https://meli.la/2KirHV5",
     },
+    {
+      name: "Estrella Baby Hiperpack 1ra Calidad Tamaño XG X36 Uds Extra Grande",
+      price: 17105,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_728029-MLA99926989725_112025-F.webp",
+      href: "https://meli.la/1CNT6P5",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
