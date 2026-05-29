@@ -262,6 +262,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_843814-MLA99435061932_112025-F.webp",
       href: "https://meli.la/2kBvLAe",
     },
+    {
+      name: "Pañales Estrella Baby Super Pack G X 60 Un Tamaño Grande",
+      price: 23560,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_667021-MLA99440393390_112025-F.webp",
+      href: "https://meli.la/2X3Vvbw",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
