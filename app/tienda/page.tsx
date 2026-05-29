@@ -359,6 +359,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/2juv6Po",
       installments: "6 cuotas de $15.528",
     },
+    {
+      name: "Sacaleches Mave By Gadnic D-115 Kit Doble Pro Extractor Automático Sin Bpa",
+      price: 49999,
+      originalPrice: 96949,
+      discount: "48% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_720949-MLA96662267844_112025-F.webp",
+      href: "https://meli.la/2kgdCvr",
+      installments: "6 cuotas de $11.099",
+    },
   ],
   banadera: [
     { name: "Bañadera Plegable con Termómetro", price: 15000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Bañadera" },
