@@ -493,7 +493,14 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   "silla-mecedora": [
-    { name: "Silla Mecedora Eléctrica", price: 35000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Mecedora" },
+    {
+      name: "Silla Mecedora Mega Baby 27267 18 Kg Vibración Y Música Color Gris",
+      price: 83098,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_602877-MLA99563623518_122025-F.webp",
+      href: "https://meli.la/23kCwLA",
+      installments: "6 cuotas de $18.447",
+    },
     { name: "Silla Mecedora Manual con Juguetes", price: 18500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Mecedora+Manual" },
   ],
   oleo: [
