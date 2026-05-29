@@ -129,6 +129,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/2YXSr4F",
       installments: "6 cuotas de $24.681",
     },
+    {
+      name: "Butaca Infantil Para Auto Mega Baby Last Ayrton Last Gris/Negro",
+      price: 132515,
+      originalPrice: 155900,
+      discount: "15% OFF",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_766150-MLA108877533679_032026-F.webp",
+      href: "https://meli.la/1dDGo6C",
+      installments: "6 cuotas de $29.418",
+    },
   ],
   cochecito: [
     { name: "Cochecito de Paseo Reclinable", price: 55000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Cochecito" },
