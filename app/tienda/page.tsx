@@ -158,6 +158,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1XnHdmJ",
       installments: "6 cuotas de $31.565",
     },
+    {
+      name: "Cochecito Avanti Dallas Cuna Reversible 6 Ruedas",
+      price: 95738,
+      originalPrice: 198079,
+      discount: "51% OFF",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_670006-MLA89217533051_082025-F.webp",
+      href: "https://meli.la/2QJJyDj",
+      installments: "12 cuotas de $7.978",
+    },
   ],
   paniales: [
     { name: "Pañales Premium X80", price: 8500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Pañales" },
