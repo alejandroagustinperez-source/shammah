@@ -283,6 +283,12 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_728029-MLA99926989725_112025-F.webp",
       href: "https://meli.la/1CNT6P5",
     },
+    {
+      name: "Huggies Natural Care XXXG X48 + Toallitas Huggies 4 En 1 X48 XXXG Sin Género",
+      price: 31500,
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_813873-MLA104655904753_012026-F.webp",
+      href: "https://meli.la/1JnyTke",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
