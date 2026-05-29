@@ -341,6 +341,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_709964-MLA91946597439_092025-F.webp",
       href: "https://meli.la/13J1RZL",
     },
+    {
+      name: "Sacaleche Eléctrico Alltomom 6811 Usb 4 Velocidades Blanco",
+      price: 24752,
+      originalPrice: 29120,
+      discount: "15% OFF",
+      badge: "Oferta imperdible",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_884325-MLA108638627392_032026-F.webp",
+      href: "https://meli.la/16MC4R1",
+    },
   ],
   banadera: [
     { name: "Bañadera Plegable con Termómetro", price: 15000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Bañadera" },
