@@ -16,13 +16,18 @@ const pacifico = Pacifico({
 });
 
 export const metadata: Metadata = {
-  title: "Shammah Bebé | Todo lo que tu bebé necesita, con amor",
+  title: "Shammah Bebé | Ropa y accesorios para bebés",
   description:
-    "Baberos, portachupetes, babitas, mantas y muñecos de tela hechos con amor para tu bebé.",
+    "Baberos, babitas, portachupetes, mantas y muñecos de tela artesanales. También cunas, cochecitos, sillas para auto y más productos para tu bebé.",
+  keywords: "ropa bebe, baberos artesanales, accesorios bebe, cunas, cochecito, silla auto bebe, pañales, Argentina",
   openGraph: {
-    title: "Shammah Bebé",
-    description: "Todo lo que tu bebé necesita, con amor",
-    images: ["/logo.png"],
+    title: "Shammah Bebé | Todo lo que tu bebé necesita",
+    description: "Productos artesanales y accesorios para bebés con envío a todo el país.",
+    url: "https://shammah-bebe.vercel.app",
+    siteName: "Shammah Bebé",
+    images: [{ url: "https://shammah-bebe.vercel.app/logo.png" }],
+    locale: "es_AR",
+    type: "website",
   },
 };
 
