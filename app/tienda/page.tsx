@@ -323,7 +323,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   "saca-leche": [
-    { name: "Saca Leche Eléctrico Doble", price: 38000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Saca+Leche" },
+    {
+      name: "Extractor De Leche Eléctrico Mawe By Gadnic Rh-289 150 Ml 9 Niveles Pantalla",
+      price: 37799,
+      originalPrice: 45999,
+      discount: "17% OFF",
+      badge: "Oferta imperdible",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_827587-MLA99986097933_112025-F.webp",
+      href: "https://meli.la/1kPw7kf",
+    },
     { name: "Saca Leche Manual", price: 12500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Saca+Leche+Manual" },
   ],
   banadera: [
