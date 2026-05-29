@@ -446,7 +446,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   jabon: [
-    { name: "Jabón pH Neutro Bebé 500ml", price: 3800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Jabon+Bebe" },
+    {
+      name: "Jabón En Barra Baby Dove Humectación Enriquecida 75g",
+      price: 3260,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_882612-MLA99880313765_112025-F.webp",
+      href: "https://meli.la/2HZU5Hu",
+    },
     { name: "Set Regalo Jabón + Crema", price: 5800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Set+Jabon", badge: "Más vendido" },
   ],
   mochila: [
