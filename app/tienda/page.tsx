@@ -176,7 +176,12 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1Mkyf1C",
       installments: "6 cuotas de $11.222",
     },
-    { name: "Pañales Ecológicos X60", price: 10200, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Pañales+Eco", badge: "Más vendido" },
+    {
+      name: "Pañales Huggies Pants Soft Comfort XXG X 24un Extra Extra Grande",
+      price: 18205,
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_713278-MLA99332044964_112025-F.webp",
+      href: "https://meli.la/1iXF1Ze",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
