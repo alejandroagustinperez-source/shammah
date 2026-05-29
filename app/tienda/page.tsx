@@ -462,7 +462,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   mochila: [
-    { name: "Mochila Maternal Tipo Bandolera", price: 18000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Mochila" },
+    {
+      name: "Mochila Maternal Termica Cuna Cambiador Bolsillo Impermeable",
+      price: 29999,
+      originalPrice: 49999,
+      discount: "40% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_950298-MLA109865071567_032026-F.webp",
+      href: "https://meli.la/1KiwoKW",
+    },
     { name: "Mochila Maternal con Cambiador", price: 22500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Mochila+Cambiador" },
   ],
   corralito: [
