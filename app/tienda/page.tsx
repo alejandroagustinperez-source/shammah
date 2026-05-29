@@ -453,7 +453,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_882612-MLA99880313765_112025-F.webp",
       href: "https://meli.la/2HZU5Hu",
     },
-    { name: "Set Regalo Jabón + Crema", price: 5800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Set+Jabon", badge: "Más vendido" },
+    {
+      name: "Dove Original Jabón En Barra Blanco 3x90g",
+      price: 6755,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_851292-MLA99833638811_112025-F.webp",
+      href: "https://meli.la/2Z2gCoJ",
+    },
   ],
   mochila: [
     { name: "Mochila Maternal Tipo Bandolera", price: 18000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Mochila" },
