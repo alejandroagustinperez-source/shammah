@@ -369,6 +369,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/2kgdCvr",
       installments: "6 cuotas de $11.099",
     },
+    {
+      name: "Sacaleche Eléctrico Inalámbrico Mawe By Gadnic Scl82 9 Niveles 3 Modos",
+      price: 69949,
+      originalPrice: 150149,
+      discount: "53% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_782108-MLA102497452900_122025-F.webp",
+      href: "https://meli.la/1zdAmWU",
+      installments: "6 cuotas de $15.528",
+    },
   ],
   banadera: [
     { name: "Bañadera Plegable con Termómetro", price: 15000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Bañadera" },
