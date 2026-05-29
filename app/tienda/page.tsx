@@ -47,7 +47,7 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       originalPrice: 217300,
       discount: "18% OFF",
       badge: "Más vendido",
-      image: "https://meli.la/1HDPjJC",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_795214-MLA96242570891_102025-F.webp",
       href: "https://meli.la/1HDPjJC",
       installments: "6 cuotas de $39.557",
     },
