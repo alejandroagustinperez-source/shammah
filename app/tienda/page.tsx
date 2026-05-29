@@ -233,6 +233,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_755978-MLA99451953736_112025-F.webp",
       href: "https://meli.la/33M4y1o",
     },
+    {
+      name: "Pañales Huggies Dermacare Etapa 2/m 58 U Mediano Sin Género",
+      price: 25000,
+      originalPrice: 30999,
+      discount: "19% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_740815-MLA99929198885_112025-F.webp",
+      href: "https://meli.la/2nHXLmY",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
