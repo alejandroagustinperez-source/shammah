@@ -189,6 +189,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_728502-MLA99441279000_112025-F.webp",
       href: "https://meli.la/1dGUVdd",
     },
+    {
+      name: "Pañales Huggies Flexi Comfort XG Paquete De 52 Unidades Extra Grande",
+      price: 26050,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_831516-MLA99335361420_112025-F.webp",
+      href: "https://meli.la/1BkSsXp",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
