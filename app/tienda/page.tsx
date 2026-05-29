@@ -483,7 +483,14 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1JGQLWi",
       installments: "6 cuotas de $16.762",
     },
-    { name: "Corralito de Tela con Mosquitero", price: 28000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Corralito+Tela", badge: "Más vendido" },
+    {
+      name: "Corralito Juegos Bebé Portable 180x120 Trapani Belluno Baby Gris Liso",
+      price: 199990,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_661422-MLA91243848264_092025-F.webp",
+      href: "https://meli.la/1TpWoAZ",
+      installments: "6 cuotas de $44.397",
+    },
   ],
   "silla-mecedora": [
     { name: "Silla Mecedora Eléctrica", price: 35000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Mecedora" },
