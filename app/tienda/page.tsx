@@ -397,7 +397,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_940757-MLA99989362939_112025-F.webp",
       href: "https://meli.la/24gx1Fz",
     },
-    { name: "Bañadera Anatómica Bebé", price: 11200, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Bañadera+Anatomica" },
+    {
+      name: "Bañera Plegable Love B330 Color Gris 77cm X 43cm X 20cm Con Diseño",
+      price: 32929,
+      originalPrice: 44499,
+      discount: "26% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_814193-MLA99463706918_112025-F.webp",
+      href: "https://meli.la/2DSoto8",
+    },
   ],
   jabon: [
     { name: "Jabón pH Neutro Bebé 500ml", price: 3800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Jabon+Bebe" },
