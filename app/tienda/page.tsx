@@ -473,7 +473,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   corralito: [
-    { name: "Corralito de Madera Plegable", price: 48000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Corralito" },
+    {
+      name: "Mega Baby Manta Corralito Gimnasio Didáctica Bebe 3 En 1 Con Pelotas",
+      price: 100572,
+      originalPrice: 106991,
+      discount: "6% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_763496-MLA88303387775_072025-F.webp",
+      href: "https://meli.la/1JGQLWi",
+      installments: "6 cuotas de $16.762",
+    },
     { name: "Corralito de Tela con Mosquitero", price: 28000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Corralito+Tela", badge: "Más vendido" },
   ],
   "silla-mecedora": [
