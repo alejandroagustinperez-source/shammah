@@ -140,7 +140,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   cochecito: [
-    { name: "Cochecito de Paseo Reclinable", price: 55000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Cochecito" },
+    {
+      name: "Chicco Coche De Paseo Glee Uneven Black Color Negro Chasis Negro",
+      price: 209270,
+      originalPrice: 499270,
+      discount: "58% OFF",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_605899-MLA95395067658_102025-F.webp",
+      href: "https://meli.la/2uhQaBh",
+      installments: "6 cuotas de $34.878",
+    },
     { name: "Cochecito Travel System", price: 72000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Travel+System" },
   ],
   paniales: [
