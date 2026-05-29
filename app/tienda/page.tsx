@@ -588,6 +588,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/136qxBA",
       installments: "6 cuotas de $10.433",
     },
+    {
+      name: "Silla Comer Para Bebé Avanti Plegable Bandeja",
+      price: 65309,
+      originalPrice: 197283,
+      discount: "66% OFF",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_645596-MLA98761488105_112025-F.webp",
+      href: "https://meli.la/1vaL6fM",
+      installments: "12 cuotas de $5.442",
+    },
   ],
   camara: [
     { name: "Cámara de Vigilancia WiFi Bebé", price: 22000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Camara" },
