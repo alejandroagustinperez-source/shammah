@@ -709,18 +709,18 @@ export default function TiendaPage() {
   return (
     <div className="min-h-screen bg-[#fdfaf7]">
       {/* Top bar */}
-      <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-3 sm:px-4 py-3 sm:py-4 flex items-center justify-between">
         <Link
           href="/"
-          className="text-[#9b8bb4] hover:text-[#7b5ea7] text-sm font-semibold transition-colors"
+          className="text-[#9b8bb4] hover:text-[#7b5ea7] text-xs sm:text-sm font-semibold transition-colors"
         >
-          ← Volver al inicio
+          ← Volver
         </Link>
-        <h1 className="font-display text-2xl text-[#9b8bb4]">Tienda</h1>
-        <div className="w-28" />
+        <h1 className="font-display text-xl sm:text-2xl text-[#9b8bb4]">Tienda</h1>
+        <div className="w-20 sm:w-28" />
       </div>
 
-      <div className="max-w-7xl mx-auto lg:flex lg:gap-6 px-4">
+      <div className="max-w-7xl mx-auto lg:flex lg:gap-6 px-3 sm:px-4">
         {/* Desktop sidebar */}
         <aside className="hidden lg:block w-56 flex-shrink-0">
           <nav className="sticky top-4 max-h-[calc(100vh-2rem)] overflow-y-auto space-y-0.5 scrollbar-hide">
@@ -745,20 +745,20 @@ export default function TiendaPage() {
         </aside>
 
         {/* Mobile nav */}
-        <nav className="lg:hidden -mx-4 px-4 sticky top-0 z-10 bg-[#fdfaf7]/90 backdrop-blur border-b border-[#e8e0f0] py-3 mb-6 overflow-x-auto">
-          <div className="flex gap-2 scrollbar-hide">
+        <nav className="lg:hidden -mx-4 px-4 sticky top-0 z-10 bg-[#fdfaf7]/90 backdrop-blur border-b border-[#e8e0f0] py-2 sm:py-3 mb-4 sm:mb-6 overflow-x-auto">
+          <div className="flex gap-1.5 sm:gap-2 scrollbar-hide">
             {allCategories.map((cat) => (
               <button
                 key={cat.id}
                 onClick={() => scrollToCategory(cat.id)}
-                className={`flex items-center gap-1.5 px-4 py-2 rounded-full whitespace-nowrap text-sm font-semibold transition-all ${
+                className={`flex items-center gap-1 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full whitespace-nowrap text-[11px] sm:text-sm font-semibold transition-all ${
                   activeCategory === cat.id
                     ? "bg-[#d4b8e0] text-white shadow-sm"
                     : "bg-[#f0ecf8] text-[#7b5ea7] hover:bg-[#e0d4ec]"
                 }`}
               >
-                <span>{cat.emoji}</span>
-                {cat.label}
+                <span className="text-xs sm:text-sm">{cat.emoji}</span>
+                <span className="text-[10px] sm:text-sm">{cat.label}</span>
               </button>
             ))}
           </div>
@@ -767,7 +767,7 @@ export default function TiendaPage() {
         {/* Content */}
         <main className="flex-1 min-w-0 pb-16">
           {/* Artisan sections */}
-          {allCategories
+            {allCategories
             .filter((c) => c.type === "artisan")
             .map((cat) => {
               const filtered = artisanProducts.filter((p) => p.category === cat.id);
@@ -775,16 +775,16 @@ export default function TiendaPage() {
                 <section
                   key={cat.id}
                   data-category-id={cat.id}
-                  className="mb-14 scroll-mt-24"
+                  className="mb-10 sm:mb-14 scroll-mt-24"
                 >
-                  <div className="flex items-center gap-3 mb-6">
-                    <span className="text-3xl">{cat.emoji}</span>
-                    <h2 className="font-display text-2xl text-[#9b8bb4]">
+                  <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-6">
+                    <span className="text-2xl sm:text-3xl">{cat.emoji}</span>
+                    <h2 className="font-display text-lg sm:text-2xl text-[#9b8bb4]">
                       {cat.label}
                     </h2>
                     <div className="flex-1 h-px bg-[#ede0f5]" />
                   </div>
-                  <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                  <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-3 sm:gap-4">
                     {filtered.map((p) => (
                       <ProductCard key={p.id} product={p} />
                     ))}
@@ -794,10 +794,10 @@ export default function TiendaPage() {
             })}
 
           {/* ML sections */}
-          <div className="mb-8">
-            <div className="flex items-center gap-3">
-              <span className="text-2xl">🛒</span>
-              <h2 className="font-display text-2xl text-[#9b8bb4]">
+          <div className="mb-6 sm:mb-8">
+            <div className="flex items-center gap-2 sm:gap-3">
+              <span className="text-xl sm:text-2xl">🛒</span>
+              <h2 className="font-display text-lg sm:text-2xl text-[#9b8bb4]">
                 Productos de Mercado Libre
               </h2>
               <div className="flex-1 h-px bg-[#ede0f5]" />
@@ -812,19 +812,19 @@ export default function TiendaPage() {
                 <section
                   key={cat.id}
                   data-category-id={cat.id}
-                  className="mb-14 scroll-mt-24"
+                  className="mb-10 sm:mb-14 scroll-mt-24"
                 >
-                  <div className="flex items-center gap-3 mb-6">
-                    <span className="text-3xl">{cat.emoji}</span>
-                    <h2 className="font-display text-2xl text-[#9b8bb4]">
+                  <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-6">
+                    <span className="text-2xl sm:text-3xl">{cat.emoji}</span>
+                    <h2 className="font-display text-lg sm:text-2xl text-[#9b8bb4]">
                       {cat.label}
                     </h2>
-                    <span className="text-[10px] font-bold uppercase tracking-wider text-white bg-[#9b8bb4] px-2 py-0.5 rounded-full">
+                    <span className="text-[9px] sm:text-[10px] font-bold uppercase tracking-wider text-white bg-[#9b8bb4] px-1.5 sm:px-2 py-0.5 rounded-full">
                       ML
                     </span>
                     <div className="flex-1 h-px bg-[#ede0f5]" />
                   </div>
-                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 sm:gap-4">
                     {products.map((p, i) => (
                       <MLProductCard key={i} product={p} />
                     ))}
