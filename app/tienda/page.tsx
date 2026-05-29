@@ -169,7 +169,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   paniales: [
-    { name: "Pañales Premium X80", price: 8500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Pañales" },
+    {
+      name: "Pañales Pampers Deluxe Protection Talle XXG 34 Un Extra Extra Grande",
+      price: 50551,
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_748591-MLA99918803271_112025-F.webp",
+      href: "https://meli.la/1Mkyf1C",
+      installments: "6 cuotas de $11.222",
+    },
     { name: "Pañales Ecológicos X60", price: 10200, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Pañales+Eco", badge: "Más vendido" },
   ],
   chupetes: [
