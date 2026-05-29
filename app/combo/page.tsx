@@ -1,6 +1,5 @@
 "use client";
 import { useState, useMemo } from "react";
-import Image from "next/image";
 import { products, categories, getWhatsAppUrl } from "@/data/products";
 
 export default function ComboPage() {
@@ -107,13 +106,10 @@ export default function ComboPage() {
                         >
                           <div className="w-full aspect-square bg-[#faf8ff] rounded-xl flex items-center justify-center text-4xl mb-2 overflow-hidden">
                             {p.images[0] && p.images[0] !== "/images/placeholder.jpg" ? (
-                              <Image
+                              <img
                                 src={p.images[0]}
                                 alt={p.name}
-                                fill
-                                sizes="(max-width: 768px) 50vw, 33vw"
-                                loading="lazy"
-                                className="object-cover"
+                                className="w-full h-full object-cover"
                               />
                             ) : (
                               <span>{cat.emoji}</span>
