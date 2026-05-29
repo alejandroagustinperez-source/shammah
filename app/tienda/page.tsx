@@ -542,7 +542,14 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1LGbpu9",
       installments: "6 cuotas de $13.397",
     },
-    { name: "Aspirador Nasal Manual Perilla", price: 2800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Aspirador+Manual" },
+    {
+      name: "Aspirador Nasal Automátic Aspen Delfín Anm12 12 Melodías Saca Moco",
+      price: 49999,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_665865-MLA99990303053_112025-F.webp",
+      href: "https://meli.la/2X4MgB9",
+      installments: "6 cuotas de $11.099",
+    },
   ],
   "silla-comer": [
     { name: "Silla de Comer Plegable", price: 24000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Silla+Comer" },
