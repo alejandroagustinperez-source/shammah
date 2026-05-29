@@ -21,7 +21,7 @@ export default function MLProductCard({ product }: { product: MLProduct }) {
 
   return (
     <div className="bg-white rounded-3xl shadow-sm border border-[#f0ecf8] overflow-hidden hover:shadow-md transition-all hover:-translate-y-1 flex flex-col">
-      <div className="relative aspect-square bg-[#faf8ff] overflow-hidden">
+      <div className="relative h-48 bg-[#f8f8f8] overflow-hidden">
         {imgError ? (
           <div className="w-full h-full flex items-center justify-center text-6xl text-[#d4b8e0]">
             🛒
@@ -30,7 +30,7 @@ export default function MLProductCard({ product }: { product: MLProduct }) {
           <img
             src={product.image}
             alt={product.name}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-contain p-3"
             onError={() => setImgError(true)}
           />
         )}
