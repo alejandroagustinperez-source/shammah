@@ -83,7 +83,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   "silla-auto": [
-    { name: "Silla de Auto Grupo 0/1", price: 28000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Silla+Auto" },
+    {
+      name: "Butaca Silla Para Auto Bebé Avanti Homologada 0-25 Kgs Color Plateado",
+      price: 129097,
+      originalPrice: 220339,
+      discount: "41% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_664026-MLA84555801344_052025-F.webp",
+      href: "https://meli.la/2v7JSKc",
+      installments: "6 cuotas de $28.659",
+    },
     { name: "Silla de Auto Isofix", price: 39000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Silla+Isofix", badge: "Más vendido" },
   ],
   cochecito: [
