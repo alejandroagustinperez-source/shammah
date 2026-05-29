@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   description:
     "Baberos, babitas, portachupetes, mantas y muñecos de tela artesanales. También cunas, cochecitos, sillas para auto y más productos para tu bebé.",
   keywords: "ropa bebe, baberos artesanales, accesorios bebe, cunas, cochecito, silla auto bebe, pañales, Argentina",
+  verification: {
+    google: "2_1cyfIn1NO2IrNEBWt7kTcss4hZArJnwvE52VI6b-w",
+  },
   openGraph: {
     title: "Shammah Bebé | Todo lo que tu bebé necesita",
     description: "Productos artesanales y accesorios para bebés con envío a todo el país.",
