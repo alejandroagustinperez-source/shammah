@@ -182,6 +182,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_713278-MLA99332044964_112025-F.webp",
       href: "https://meli.la/1iXF1Ze",
     },
+    {
+      name: "Pañales Babysec Premium Soft M X48u Sin Género Tamaño Mediano",
+      price: 19500,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_728502-MLA99441279000_112025-F.webp",
+      href: "https://meli.la/1dGUVdd",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
