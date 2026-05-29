@@ -578,6 +578,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/19YbbYm",
       installments: "9 cuotas de $10.460",
     },
+    {
+      name: "Silla De Comer Bebe Avanti Full 3 En 1 Alta Baja Booster",
+      price: 46999,
+      originalPrice: 151591,
+      discount: "69% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_624703-MLA110941145511_042026-F.webp",
+      href: "https://meli.la/136qxBA",
+      installments: "6 cuotas de $10.433",
+    },
   ],
   camara: [
     { name: "Cámara de Vigilancia WiFi Bebé", price: 22000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Camara" },
