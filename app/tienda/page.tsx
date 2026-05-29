@@ -291,7 +291,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   chupetes: [
-    { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
+    {
+      name: "Chupetes Philips Avent Ultra Air Scf376/21 6-18 M X 2 Color Celeste",
+      price: 12999,
+      originalPrice: 29206,
+      discount: "55% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_759526-MLA105238408294_012026-F.webp",
+      href: "https://meli.la/1KLFg98",
+    },
     { name: "Chupete Ortopédico Noche", price: 3200, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete+Ortho" },
   ],
   biberon: [
