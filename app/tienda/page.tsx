@@ -561,7 +561,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/32M4pLM",
       installments: "6 cuotas de $19.513",
     },
-    { name: "Silla de Comer de Madera", price: 32000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Silla+Madera", badge: "Más vendido" },
+    {
+      name: "Silla De Comer Motek Emily 3 En 1 Con Bandeja Extraíble Gris",
+      price: 62930,
+      originalPrice: 89900,
+      discount: "30% OFF",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_987475-MLA110076631585_042026-F.webp",
+      href: "https://meli.la/1vCjHF8",
+      installments: "6 cuotas de $13.970",
+    },
   ],
   camara: [
     { name: "Cámara de Vigilancia WiFi Bebé", price: 22000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Camara" },
