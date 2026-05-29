@@ -332,7 +332,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_827587-MLA99986097933_112025-F.webp",
       href: "https://meli.la/1kPw7kf",
     },
-    { name: "Saca Leche Manual", price: 12500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Saca+Leche+Manual" },
+    {
+      name: "Sacaleche Extractor Eléctrico Doble Alltomom Ac6834",
+      price: 29968,
+      originalPrice: 35257,
+      discount: "15% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_709964-MLA91946597439_092025-F.webp",
+      href: "https://meli.la/13J1RZL",
+    },
   ],
   banadera: [
     { name: "Bañadera Plegable con Termómetro", price: 15000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Bañadera" },
