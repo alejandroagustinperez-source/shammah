@@ -149,7 +149,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/2uhQaBh",
       installments: "6 cuotas de $34.878",
     },
-    { name: "Cochecito Travel System", price: 72000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Travel+System" },
+    {
+      name: "Chicco Coche De Paseo Glee Playful Black Negro",
+      price: 189390,
+      originalPrice: 499390,
+      discount: "62% OFF",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_989864-MLA80807741444_112024-F.webp",
+      href: "https://meli.la/1XnHdmJ",
+      installments: "6 cuotas de $31.565",
+    },
   ],
   paniales: [
     { name: "Pañales Premium X80", price: 8500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Pañales" },
