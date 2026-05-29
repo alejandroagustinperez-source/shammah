@@ -389,7 +389,14 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   banadera: [
-    { name: "Bañadera Plegable con Termómetro", price: 15000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Bañadera" },
+    {
+      name: "Love B330 Bañera Plegable Color Rosa 77cm X 43cm X 20cm Con Diseño",
+      price: 32929,
+      originalPrice: 44499,
+      discount: "26% OFF",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_940757-MLA99989362939_112025-F.webp",
+      href: "https://meli.la/24gx1Fz",
+    },
     { name: "Bañadera Anatómica Bebé", price: 11200, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Bañadera+Anatomica" },
   ],
   jabon: [
