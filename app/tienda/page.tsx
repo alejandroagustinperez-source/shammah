@@ -681,6 +681,7 @@ const mlProductsMap: Record<string, MLProduct[]> = {
 
 export default function TiendaPage() {
   const [activeCategory, setActiveCategory] = useState("baberos");
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -701,9 +702,19 @@ export default function TiendaPage() {
     return () => observer.disconnect();
   }, []);
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+    return () => { document.body.style.overflow = ""; };
+  }, [menuOpen]);
+
   const scrollToCategory = (id: string) => {
     const el = document.querySelector(`[data-category-id="${id}"]`);
     el?.scrollIntoView({ behavior: "smooth" });
+    setMenuOpen(false);
   };
 
   return (
@@ -744,25 +755,67 @@ export default function TiendaPage() {
           </nav>
         </aside>
 
-        {/* Mobile nav */}
-        <nav className="lg:hidden -mx-4 px-4 sticky top-0 z-10 bg-[#fdfaf7]/90 backdrop-blur border-b border-[#e8e0f0] py-2 sm:py-3 mb-4 sm:mb-6 overflow-x-auto">
-          <div className="flex gap-1.5 sm:gap-2 scrollbar-hide">
-            {allCategories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => scrollToCategory(cat.id)}
-                className={`flex items-center gap-1 px-3 py-1.5 sm:px-4 sm:py-2 rounded-full whitespace-nowrap text-[11px] sm:text-sm font-semibold transition-all ${
-                  activeCategory === cat.id
-                    ? "bg-[#d4b8e0] text-white shadow-sm"
-                    : "bg-[#f0ecf8] text-[#7b5ea7] hover:bg-[#e0d4ec]"
-                }`}
-              >
-                <span className="text-xs sm:text-sm">{cat.emoji}</span>
-                <span className="text-[10px] sm:text-sm">{cat.label}</span>
-              </button>
-            ))}
+        {/* Mobile hamburger + drawer */}
+        <div className="lg:hidden sticky top-0 z-20 mb-4 sm:mb-6">
+          <div className="bg-[#fdfaf7]/90 backdrop-blur border-b border-[#e8e0f0] px-3 py-2.5 flex items-center justify-between">
+            <button
+              onClick={() => setMenuOpen(true)}
+              className="flex items-center gap-2 px-3 py-2 rounded-xl bg-[#f0ecf8] hover:bg-[#e0d4ec] text-[#7b5ea7] font-semibold text-sm transition-all active:scale-95"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+              </svg>
+              Categorías
+            </button>
+            <span className="text-xs text-[#9b8bb4] font-semibold">
+              {activeCategory ? allCategories.find(c => c.id === activeCategory)?.label : ""}
+            </span>
           </div>
-        </nav>
+
+          {menuOpen && (
+            <>
+              <div
+                className="fixed inset-0 bg-black/40 z-30"
+                onClick={() => setMenuOpen(false)}
+              />
+              <div className="fixed top-0 left-0 right-0 z-40 bg-white rounded-b-2xl shadow-xl max-h-[60vh] overflow-y-auto">
+                <div className="flex items-center justify-between px-4 py-3 border-b border-[#f0ecf8]">
+                  <span className="font-bold text-[#4a4a4a] text-sm">Categorías</span>
+                  <button
+                    onClick={() => setMenuOpen(false)}
+                    className="w-8 h-8 flex items-center justify-center rounded-full bg-[#f0ecf8] text-[#9b8bb4] hover:bg-[#d4b8e0] hover:text-white transition-all"
+                  >
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="18" y1="6" x2="6" y2="18" />
+                      <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                  </button>
+                </div>
+                <div className="py-1">
+                  {allCategories.map((cat, i) => (
+                    <button
+                      key={cat.id}
+                      onClick={() => scrollToCategory(cat.id)}
+                      className={`w-full text-left px-4 py-3 flex items-center gap-3 transition-all ${
+                        activeCategory === cat.id
+                          ? "bg-[#f0ecf8] text-[#7b5ea7] font-bold"
+                          : "text-[#4a4a4a] font-semibold hover:bg-[#faf8ff]"
+                      } ${i < allCategories.length - 1 ? "border-b border-[#f0ecf8]" : ""}`}
+                    >
+                      <span className="text-lg">{cat.emoji}</span>
+                      <span className="text-sm">{cat.label}</span>
+                      {cat.type === "ml" && (
+                        <span className="ml-auto text-[9px] font-bold uppercase tracking-wider text-white bg-[#9b8bb4] px-1.5 py-0.5 rounded-full">ML</span>
+                      )}
+                    </button>
+                  ))}
+                </div>
+              </div>
+            </>
+          )}
+        </div>
 
         {/* Content */}
         <main className="flex-1 min-w-0 pb-16">
