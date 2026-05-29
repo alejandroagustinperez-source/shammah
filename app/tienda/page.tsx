@@ -51,7 +51,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1HDPjJC",
       installments: "6 cuotas de $39.557",
     },
-    { name: "Cuna Plegable Portátil", price: 32000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Cuna+Portatil", badge: "Más vendido" },
+    {
+      name: "Cuna De Bebé Estrella Mega Baby De Madera Eléctrica Mecedora Color Grey",
+      price: 199471,
+      originalPrice: 219199,
+      discount: "9% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_870504-MLA99504562938_112025-F.webp",
+      href: "https://meli.la/1YFWoab",
+      installments: "6 cuotas de $44.282",
+    },
   ],
   "silla-auto": [
     { name: "Silla de Auto Grupo 0/1", price: 28000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Silla+Auto" },
