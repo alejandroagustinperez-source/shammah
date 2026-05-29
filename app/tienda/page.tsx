@@ -93,7 +93,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/2v7JSKc",
       installments: "6 cuotas de $28.659",
     },
-    { name: "Silla de Auto Isofix", price: 39000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Silla+Isofix", badge: "Más vendido" },
+    {
+      name: "Butaca Auto Bebé Last Ayrton Mega Baby Convertible 0-25 Kg",
+      price: 132511,
+      originalPrice: 155896,
+      discount: "15% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_820679-MLA108877259217_032026-F.webp",
+      href: "https://meli.la/2JyaEjZ",
+      installments: "6 cuotas de $29.417",
+    },
   ],
   cochecito: [
     { name: "Cochecito de Paseo Reclinable", price: 55000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Cochecito" },
