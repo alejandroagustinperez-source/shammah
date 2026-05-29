@@ -379,6 +379,14 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/1zdAmWU",
       installments: "6 cuotas de $15.528",
     },
+    {
+      name: "Sacaleche Manual Mawe By Gadnic Brp00104 180ml Siliconada Manija",
+      price: 16299,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_890025-MLA84559324526_052025-F.webp",
+      href: "https://meli.la/2K5G4pG",
+      installments: "9 cuotas de $1.811",
+    },
   ],
   banadera: [
     { name: "Bañadera Plegable con Termómetro", price: 15000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Bañadera" },
