@@ -501,7 +501,6 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/23kCwLA",
       installments: "6 cuotas de $18.447",
     },
-    { name: "Silla Mecedora Manual con Juguetes", price: 18500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Mecedora+Manual" },
   ],
   oleo: [
     { name: "Óleo Calcáreo Crema X50g", price: 4200, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Oleo+Calcareo" },
