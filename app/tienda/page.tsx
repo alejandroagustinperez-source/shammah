@@ -242,6 +242,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_740815-MLA99929198885_112025-F.webp",
       href: "https://meli.la/2nHXLmY",
     },
+    {
+      name: "Pañales Estrella Baby Talle XXG Pack Ahorro X 50 Unidades Descartables",
+      price: 20499,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_610648-MLA99926902737_112025-F.webp",
+      href: "https://meli.la/2VUFmQN",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
