@@ -599,7 +599,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
     },
   ],
   camara: [
-    { name: "Cámara de Vigilancia WiFi Bebé", price: 22000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Camara" },
+    {
+      name: "Baby Call Monitor Gadnic Cámara Con Visión Nocturna Para Bebes Audio Video",
+      price: 73299,
+      originalPrice: 132849,
+      discount: "44% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_914463-MLA110384806949_042026-F.webp",
+      href: "https://meli.la/2vJiDcY",
+      installments: "6 cuotas de $16.272",
+    },
     { name: "Cámara de Vigilancia con Sensor", price: 29000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Camara+Sensor" },
   ],
   piso: [
