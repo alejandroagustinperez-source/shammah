@@ -111,6 +111,16 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       href: "https://meli.la/2aBa7aN",
       installments: "6 cuotas de $26.990",
     },
+    {
+      name: "Booster Auto Bebe Mega Baby Silverstone 3 En 1 De 9 A 36 Kg Color Negro",
+      price: 94502,
+      originalPrice: 111179,
+      discount: "15% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_907210-MLA109740334113_032026-F.webp",
+      href: "https://meli.la/1zcXW65",
+      installments: "6 cuotas de $20.979",
+    },
   ],
   cochecito: [
     { name: "Cochecito de Paseo Reclinable", price: 55000, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Cochecito" },
