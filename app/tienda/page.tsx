@@ -249,6 +249,13 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_610648-MLA99926902737_112025-F.webp",
       href: "https://meli.la/2VUFmQN",
     },
+    {
+      name: "Pañales Toddler Deluxe Talle XG X30 Extra Grande Sin Género",
+      price: 13100,
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_750203-MLA99387217930_112025-F.webp",
+      href: "https://meli.la/2VaGT8y",
+    },
   ],
   chupetes: [
     { name: "Chupete Silicona 0-6m", price: 2500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Chupete" },
