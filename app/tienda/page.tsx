@@ -32,7 +32,6 @@ const allCategories: TiendaCategory[] = [
   { id: "silla-mecedora", label: "Silla mecedora", emoji: "🪑", type: "ml" },
   { id: "oleo", label: "Óleo calcáreo", emoji: "🧪", type: "ml" },
   { id: "manta-caminadora", label: "Manta caminadora", emoji: "🧶", type: "ml" },
-  { id: "manta-sensorial", label: "Manta sensorial", emoji: "🎨", type: "ml" },
   { id: "aspirador", label: "Aspirador nasal", emoji: "💨", type: "ml" },
   { id: "silla-comer", label: "Silla de comer", emoji: "🍽️", type: "ml" },
   { id: "camara", label: "Cámara", emoji: "📷", type: "ml" },
@@ -531,10 +530,6 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_858933-MLA96146061631_102025-F.webp",
       href: "https://meli.la/2KxiCzJ",
     },
-  ],
-  "manta-sensorial": [
-    { name: "Manta Sensorial Texturas", price: 9800, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Manta+Sensorial" },
-    { name: "Manta Sensorial Plegable con Sonidos", price: 13200, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Manta+Sensorial+2" },
   ],
   aspirador: [
     { name: "Aspirador Nasal Eléctrico", price: 8500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Aspirador" },
