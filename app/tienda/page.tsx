@@ -667,7 +667,15 @@ const mlProductsMap: Record<string, MLProduct[]> = {
       image: "https://http2.mlstatic.com/D_NQ_NP_2X_613140-MLA111356582607_052026-F.webp",
       href: "https://meli.la/2V6xyAE",
     },
-    { name: "Piso Encastrable de Letras", price: 14500, href: "#", image: "https://placehold.co/300x300/e2d8f0/9b8bb4?text=Piso+Letras", badge: "Más vendido" },
+    {
+      name: "Pack X 4 Piso Goma Eva Encastrable + Bordes 60 X 60cm Gym Color Negro",
+      price: 19989,
+      originalPrice: 39978,
+      discount: "50% OFF",
+      badge: "Más vendido",
+      image: "https://http2.mlstatic.com/D_NQ_NP_2X_951131-MLA110691200218_052026-F.webp",
+      href: "https://meli.la/2mUiHPP",
+    },
   ],
 };
 
