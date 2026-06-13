@@ -17,11 +17,11 @@ export default function BundleSection() {
             return (
               <div
                 key={bundle.id}
-                className="bg-white rounded-3xl border-2 border-[#ffb6a3] shadow-sm overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1"
+                className="bg-white rounded-3xl border border-[#ede8f5] shadow-sm overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1"
               >
                 <div className="bg-gradient-to-r from-[#fde8e2] to-[#ede0f5] px-6 py-5">
                   <div className="flex items-start justify-between">
-                    <h3 className="font-extrabold text-xl text-[#c0614a]">{bundle.name}</h3>
+                    <h3 className="font-black text-xl text-[#3d2c4e]">{bundle.name}</h3>
                     <span className="badge-descuento">-{discount}%</span>
                   </div>
                   <p className="text-[#9a7a7a] text-sm mt-1">{bundle.description}</p>
@@ -64,9 +64,9 @@ export default function BundleSection() {
             );
           })}
           {/* Card de combo personalizado */}
-          <div className="bg-[#fdfaf7] rounded-3xl border-2 border-dashed border-[#d4b8e0] shadow-sm overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col">
+          <div            className="bg-[#fdfaf7] rounded-3xl border-2 border-dashed border-[#c9b8e8] shadow-sm overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col">
             <div className="bg-gradient-to-r from-[#ede0f5] to-[#fde8e2] px-6 py-5">
-              <h3 className="font-extrabold text-xl text-[#c0614a]">🛒 Armá tu propio combo</h3>
+              <h3 className="font-black text-xl text-[#3d2c4e]">🛒 Armá tu propio combo</h3>
               <p className="text-[#9a7a7a] text-sm mt-1">
                 Elegí los productos que quieras y calculá el precio al instante
               </p>
