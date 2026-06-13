@@ -74,7 +74,7 @@ export default function ComboPage() {
           </svg>
           Volver
         </a>
-        <h1 className="font-display text-3xl text-[#9b8bb4] text-center mb-2">
+        <h1 className="font-black text-[#3d2c4e] text-3xl text-center mb-2">
           Armá tu combo 🎁
         </h1>
         <p className="text-center text-[#7a7a7a] text-sm mb-8">
@@ -88,7 +88,7 @@ export default function ComboPage() {
               if (filtered.length === 0) return null;
               return (
                 <div key={cat.id}>
-                  <h2 className="font-display text-xl text-[#9b8bb4] mb-3 flex items-center gap-2">
+                  <h2 className="font-black text-[#3d2c4e] text-xl mb-3 flex items-center gap-2">
                     <span>{cat.emoji}</span> {cat.label}
                   </h2>
                   <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -123,7 +123,7 @@ export default function ComboPage() {
                           {p.category === "mantas" && (
                             <p className="text-[10px] font-bold text-[#c0614a] mb-2">🎨 El diseño se elige por WhatsApp</p>
                           )}
-                          <p className="text-sm font-black text-[#2eab6b] mb-2">
+                          <p className="text-sm font-black text-[#3d2c4e] mb-2">
                             ${p.currentPrice.toLocaleString("es-AR")}
                           </p>
                           {qty > 0 ? (
@@ -152,7 +152,7 @@ export default function ComboPage() {
                           ) : (
                             <button
                               onClick={() => toggle(p.id)}
-                              className="w-full py-1.5 rounded-full bg-[#f0ecf8] text-[#7b5ea7] font-semibold text-xs hover:bg-[#d4b8e0] transition-colors"
+                              className="w-full py-1.5 rounded-full bg-[#f5f0ff] text-[#3d2c4e] hover:bg-[#3d2c4e] hover:text-white font-bold text-xs transition-colors"
                             >
                               + Agregar
                             </button>
@@ -167,7 +167,7 @@ export default function ComboPage() {
           </div>
 
           <div className="lg:w-80">
-            <div className="bg-white rounded-3xl border border-[#f0ecf8] p-5 shadow-sm lg:sticky lg:top-24">
+            <div className="bg-white rounded-2xl border border-[#ede8f5] p-5 shadow-sm lg:sticky lg:top-24">
               <h3 className="font-bold text-[#4a4a4a] text-lg mb-1">
                 Tu combo 🛒
               </h3>
@@ -220,7 +220,7 @@ export default function ComboPage() {
 
               <div className="flex items-center justify-between mb-4 pt-2 border-t border-[#f0ecf8]">
                 <span className="font-bold text-[#4a4a4a]">Total</span>
-                <span className="text-xl font-black text-[#2eab6b]">
+                <span className="text-xl font-black text-[#3d2c4e]">
                   ${total.toLocaleString("es-AR")}
                 </span>
               </div>
@@ -229,7 +229,7 @@ export default function ComboPage() {
                 href={getWhatsAppUrl(whatsappMessage)}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`flex items-center justify-center gap-2 w-full bg-[#25d366] hover:bg-[#1ebe5d] text-white font-bold py-3 px-4 rounded-full transition-all hover:scale-105 text-sm ${
+                className={`flex items-center justify-center gap-2 w-full bg-[#3d2c4e] hover:bg-[#5a3d70] text-white font-bold py-3 px-4 rounded-full transition-all hover:scale-105 text-sm ${
                   selectedCount === 0 ? "opacity-50 pointer-events-none" : ""
                 }`}
               >
