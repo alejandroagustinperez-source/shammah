@@ -12,7 +12,7 @@ export default function CategoryNav() {
 
   return (
     <nav className="sticky top-0 z-10 bg-[#3d2c4e] py-3 px-4">
-      <div className="max-w-5xl mx-auto flex gap-2 overflow-x-auto scrollbar-hide justify-center flex-wrap">
+      <div className="max-w-5xl mx-auto flex gap-2 overflow-x-auto overflow-y-hidden scrollbar-hide flex-nowrap h-auto">
         {categories.map((cat) => (
           <button
             key={cat.id}
