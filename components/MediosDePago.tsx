@@ -4,7 +4,7 @@ export default function MediosDePago() {
       <div className="max-w-4xl mx-auto text-center">
         <div className="flex items-center justify-center gap-3 mb-8">
           <span className="text-3xl">💳</span>
-          <h2 className="font-display text-2xl text-[#9b8bb4]">Medios de Pago</h2>
+          <h2 className="font-black text-[#3d2c4e] text-2xl">Medios de Pago</h2>
           <div className="h-px w-16 bg-[#d4b8e0]" />
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-5">

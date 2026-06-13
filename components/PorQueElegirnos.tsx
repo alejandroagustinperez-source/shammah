@@ -25,7 +25,7 @@ export default function PorQueElegirnos() {
   return (
     <section className="bg-[#fdf0eb] py-14 px-4">
       <div className="max-w-5xl mx-auto">
-        <h2 className="font-display text-2xl text-[#c0614a] text-center mb-8">
+        <h2 className="font-black text-[#3d2c4e] text-2xl text-center mb-8">
           ¿Por qué elegirnos?
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -20,7 +20,7 @@ export default function Testimonios() {
   return (
     <section className="bg-[#fdfaf7] py-14 px-4">
       <div className="max-w-5xl mx-auto">
-        <h2 className="font-display text-2xl text-[#9b8bb4] text-center mb-8">
+        <h2 className="font-black text-[#3d2c4e] text-2xl text-center mb-8">
           Lo que dicen nuestras mamás
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
