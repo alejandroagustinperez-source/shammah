@@ -7,11 +7,11 @@ export default function Hero() {
         className="absolute inset-0 w-full h-full object-cover object-center"
       />
       <div className="absolute inset-0 bg-[#3d2c4e]/55" />
-      <div className="relative z-10 max-w-3xl mx-auto px-8 text-center">
+      <div className="relative z-10 max-w-3xl mx-auto px-8 text-center pt-8">
         <img
           src="/images/logo.png"
           alt="Shammah Bebé"
-          className="w-56 h-56 object-contain mx-auto -mb-4"
+          className="w-40 h-40 sm:w-56 sm:h-56 object-contain mx-auto mb-2"
         />
         <h1 className="text-4xl md:text-5xl font-black text-white mb-4 leading-tight">
           Todo lo que tu bebé<br />

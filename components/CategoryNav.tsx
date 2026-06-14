@@ -12,7 +12,8 @@ export default function CategoryNav() {
 
   return (
     <nav className="sticky top-0 z-10 bg-[#3d2c4e] py-3 px-4">
-      <div className="max-w-5xl mx-auto flex gap-2 overflow-x-auto overflow-y-hidden scrollbar-hide flex-nowrap h-auto">
+      <div className="relative max-w-5xl mx-auto">
+        <div className="flex gap-2 overflow-x-auto overflow-y-hidden scrollbar-hide flex-nowrap h-auto">
         {categories.map((cat) => (
           <button
             key={cat.id}
@@ -49,6 +50,8 @@ export default function CategoryNav() {
         >
           🎁 Conjuntos
         </button>
+        </div>
+        <div className="absolute right-0 top-0 h-full w-8 bg-gradient-to-l from-[#3d2c4e] to-transparent pointer-events-none" />
       </div>
     </nav>
   );
