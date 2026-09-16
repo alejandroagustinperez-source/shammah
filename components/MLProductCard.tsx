@@ -3,6 +3,7 @@ import { useState } from "react";
 
 export type MLProduct = {
   name: string;
+  mlId?: string;
   price: number;
   href: string;
   image: string;
@@ -35,14 +36,6 @@ export default function MLProductCard({ product }: { product: MLProduct }) {
           />
         )}
 
-        <div className="absolute top-2 left-2 flex flex-col gap-1">
-          {product.discount && (
-            <span className="bg-[#f43f5e] text-white text-[10px] font-black px-2 py-0.5 rounded-md tracking-wide">
-              {product.discount}
-            </span>
-          )}
-        </div>
-
         {product.badge && (
           <span className="absolute top-2 right-2 bg-[#3d2c4e] text-white text-[10px] font-bold px-2 py-0.5 rounded-md">
             {product.badge}
@@ -54,23 +47,6 @@ export default function MLProductCard({ product }: { product: MLProduct }) {
         <h3 className="font-bold text-[#3d2c4e] text-xs sm:text-sm leading-snug line-clamp-2">
           {product.name}
         </h3>
-
-        <div className="flex flex-col gap-0.5">
-          {product.originalPrice && (
-            <span className="text-[11px] text-[#bbb] line-through">
-              {formatPrice(product.originalPrice)}
-            </span>
-          )}
-          <span className="text-lg sm:text-xl font-black text-[#3d2c4e]">
-            {formatPrice(product.price)}
-          </span>
-        </div>
-
-        {product.installments && (
-          <p className="text-[10px] sm:text-xs font-semibold text-[#9b8bb4]">
-            {product.installments}
-          </p>
-        )}
 
         <a
           href={product.href}
