@@ -46,7 +46,7 @@ export default function CategoryNav() {
           onClick={() => setOpen(true)}
           aria-expanded={open}
           aria-controls="category-drawer"
-          className={`md:hidden w-full justify-center border border-[#5a3d70] ${ITEM_BASE} ${ITEM_INACTIVE}`}
+          className={`md:hidden w-fit ${ITEM_BASE} ${ITEM_INACTIVE}`}
         >
           <span aria-hidden="true">☰</span>
           Categorías
