@@ -22,7 +22,9 @@ export default function BundleSection() {
                 <div className="bg-gradient-to-r from-[#fde8e2] to-[#ede0f5] px-6 py-5">
                   <div className="flex items-start justify-between">
                     <h3 className="font-black text-xl text-[#3d2c4e]">{bundle.name}</h3>
-                    <span className="badge-descuento">-{discount}%</span>
+                    {discount > 0 && (
+                      <span className="badge-descuento">-{discount}%</span>
+                    )}
                   </div>
                   <p className="text-[#9a7a7a] text-sm mt-1">{bundle.description}</p>
                 </div>
@@ -39,9 +41,11 @@ export default function BundleSection() {
                     ))}
                   </ul>
                   <div className="flex items-baseline gap-2 mb-4">
-                    <span className="price-original text-sm">
-                      ${bundle.originalPrice.toLocaleString("es-AR")}
-                    </span>
+                    {bundle.originalPrice > bundle.currentPrice && (
+                      <span className="price-original text-sm">
+                        ${bundle.originalPrice.toLocaleString("es-AR")}
+                      </span>
+                    )}
                     <span className="text-2xl font-extrabold text-[#c0614a]">
                       ${bundle.currentPrice.toLocaleString("es-AR")}
                     </span>
