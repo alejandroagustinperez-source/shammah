@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito, Pacifico } from "next/font/google";
 import Script from "next/script";
+import CategoryNav from "@/components/CategoryNav";
 import "./globals.css";
 
 const nunito = Nunito({
@@ -42,7 +43,8 @@ export default function RootLayout({
   return (
     <html lang="es">
       <body className={`${nunito.variable} ${pacifico.variable} font-nunito antialiased`}>
-        {children}
+        <CategoryNav />
+        <div className="pt-12">{children}</div>
         <Script id="microsoft-clarity" strategy="afterInteractive">
           {`(function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};

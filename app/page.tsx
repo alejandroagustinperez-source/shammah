@@ -1,7 +1,6 @@
 import BannerPromo from "@/components/BannerPromo";
 import Hero from "@/components/Hero";
 import PorQueElegirnos from "@/components/PorQueElegirnos";
-import CategoryNav from "@/components/CategoryNav";
 import ProductGrid from "@/components/ProductGrid";
 import BundleSection from "@/components/BundleSection";
 import Testimonios from "@/components/Testimonios";
@@ -15,7 +14,6 @@ export default function Home() {
       <BannerPromo />
       <Hero />
       <PorQueElegirnos />
-      <CategoryNav />
       <ProductGrid />
       <BundleSection />
       <Testimonios />

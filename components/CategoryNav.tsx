@@ -39,7 +39,7 @@ export default function CategoryNav() {
   ];
 
   return (
-    <nav className="sticky top-0 z-50 bg-[#3d2c4e] py-3 px-4">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#3d2c4e] py-3 px-4">
       <div className="relative max-w-5xl mx-auto">
         <div className="md:hidden flex items-center gap-3">
           <button
