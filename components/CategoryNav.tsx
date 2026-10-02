@@ -41,16 +41,22 @@ export default function CategoryNav() {
   return (
     <nav className="sticky top-0 z-50 bg-[#3d2c4e] py-3 px-4">
       <div className="relative max-w-5xl mx-auto">
-        <button
-          type="button"
-          onClick={() => setOpen(true)}
-          aria-expanded={open}
-          aria-controls="category-drawer"
-          className={`md:hidden w-fit ${ITEM_BASE} ${ITEM_INACTIVE}`}
-        >
-          <span aria-hidden="true">☰</span>
-          Categorías
-        </button>
+        <div className="md:hidden flex items-center gap-3">
+          <button
+            type="button"
+            onClick={() => setOpen(true)}
+            aria-expanded={open}
+            aria-controls="category-drawer"
+            className={`w-fit ${ITEM_BASE} ${ITEM_INACTIVE}`}
+          >
+            <span aria-hidden="true">☰</span>
+            Categorías
+          </button>
+          <span className="flex items-baseline gap-0.5">
+            <span className="font-black text-white tracking-widest text-sm uppercase">Shammah</span>
+            <span className="font-bold text-[#f472b6] text-sm italic">Bebé</span>
+          </span>
+        </div>
 
         <div className="hidden md:flex gap-2 overflow-x-auto overflow-y-hidden scrollbar-hide flex-nowrap h-auto">
           {navItems.map((item) =>
