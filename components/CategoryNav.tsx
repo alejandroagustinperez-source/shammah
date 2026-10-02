@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { categories } from "@/data/products";
 
 const ITEM_BASE =
@@ -8,7 +9,22 @@ const ITEM_BASE =
 const ITEM_INACTIVE = "text-[#c9b8e8] hover:text-white hover:bg-[#5a3d70]";
 const ITEM_ACTIVE = "bg-[#f472b6] text-white";
 
+const BAR = "fixed top-0 left-0 right-0 z-50 bg-[#3d2c4e] py-3 px-4";
+const BAR_INNER = "relative max-w-5xl mx-auto";
+
+const HIDDEN_ROUTES = ["/tienda", "/combo", "/conjuntos"];
+
+function Wordmark() {
+  return (
+    <span className="flex items-baseline gap-0.5">
+      <span className="font-black text-white tracking-widest text-sm uppercase">Shammah</span>
+      <span className="font-bold text-[#f472b6] text-sm italic">Bebé</span>
+    </span>
+  );
+}
+
 export default function CategoryNav() {
+  const pathname = usePathname();
   const [activeCat, setActiveCat] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
 
@@ -38,9 +54,26 @@ export default function CategoryNav() {
     { id: "conjuntos", emoji: "🎁", label: "Conjuntos" },
   ];
 
+  const isHome = pathname === "/";
+  const isHidden = HIDDEN_ROUTES.some(
+    (route) => pathname === route || pathname.startsWith(`${route}/`)
+  );
+
+  if (isHidden) return null;
+
+  if (!isHome) {
+    return (
+      <nav className={BAR}>
+        <div className={BAR_INNER}>
+          <Wordmark />
+        </div>
+      </nav>
+    );
+  }
+
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#3d2c4e] py-3 px-4">
-      <div className="relative max-w-5xl mx-auto">
+    <nav className={BAR}>
+      <div className={BAR_INNER}>
         <div className="md:hidden flex items-center gap-3">
           <button
             type="button"
@@ -52,10 +85,7 @@ export default function CategoryNav() {
             <span aria-hidden="true">☰</span>
             Categorías
           </button>
-          <span className="flex items-baseline gap-0.5">
-            <span className="font-black text-white tracking-widest text-sm uppercase">Shammah</span>
-            <span className="font-bold text-[#f472b6] text-sm italic">Bebé</span>
-          </span>
+          <Wordmark />
         </div>
 
         <div className="hidden md:flex gap-2 overflow-x-auto overflow-y-hidden scrollbar-hide flex-nowrap h-auto">

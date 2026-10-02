@@ -44,7 +44,7 @@ export default function RootLayout({
     <html lang="es">
       <body className={`${nunito.variable} ${pacifico.variable} font-nunito antialiased`}>
         <CategoryNav />
-        <div className="pt-12">{children}</div>
+        <div className="pt-16">{children}</div>
         <Script id="microsoft-clarity" strategy="afterInteractive">
           {`(function(c,l,a,r,i,t,y){
             c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
