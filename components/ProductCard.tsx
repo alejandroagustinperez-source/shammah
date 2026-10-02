@@ -91,9 +91,11 @@ export default function ProductCard({ product }: { product: Product }) {
             {product.category === "muneco" && "🧸"}
           </div>
         )}
-        <span className="badge-descuento absolute top-3 right-3">
-          -{discount}%
-        </span>
+        {discount > 0 && (
+          <span className="badge-descuento absolute top-3 right-3">
+            -{discount}%
+          </span>
+        )}
         {product.badge && (
           <span className="absolute top-3 left-3 bg-white/80 backdrop-blur rounded-full px-2.5 py-0.5 text-xs font-bold text-[#9b8bb4] shadow-sm">
             {product.badge}
@@ -155,9 +157,11 @@ export default function ProductCard({ product }: { product: Product }) {
           <p className="text-xs font-semibold text-[#c0614a]">👶 Talle: 0 a 12 meses</p>
         )}
         <div className="flex items-baseline gap-x-2 gap-y-0.5 flex-wrap mt-1">
-          <span className="price-original text-xs sm:text-sm">
-            ${product.originalPrice.toLocaleString("es-AR")}
-          </span>
+          {product.originalPrice > product.currentPrice && (
+            <span className="price-original text-xs sm:text-sm">
+              ${product.originalPrice.toLocaleString("es-AR")}
+            </span>
+          )}
           <span className="text-xl sm:text-2xl font-black text-[#2eab6b]">
             ${product.currentPrice.toLocaleString("es-AR")}
           </span>
