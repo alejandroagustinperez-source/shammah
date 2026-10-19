@@ -49,6 +49,7 @@ export default function CategoryNav() {
   const whatsapp = getWhatsAppUrl("Hola Shammah Bebé! Quiero hacer una consulta.");
 
   return (
+    <>
     <header className="fixed top-0 left-0 right-0 z-50 bg-lino/95 backdrop-blur border-b-2 border-dashed border-[#e4c9b8]">
       <nav aria-label="Principal" className="max-w-6xl mx-auto px-5 h-16 flex items-center justify-between gap-4">
         <Marca />
@@ -83,9 +84,10 @@ export default function CategoryNav() {
           <span className="block w-6 h-0.5 rounded bg-ciruela" />
         </button>
       </nav>
+    </header>
 
       {open && (
-        <div className="lg:hidden fixed inset-0 z-50">
+        <div className="lg:hidden fixed inset-0 z-[60]">
           <button
             type="button"
             aria-label="Cerrar menú"
@@ -97,7 +99,7 @@ export default function CategoryNav() {
             role="dialog"
             aria-modal="true"
             aria-label="Menú"
-            className="absolute right-0 top-0 h-full w-72 bg-lino shadow-xl flex flex-col p-6 gap-1"
+            className="absolute right-0 top-0 h-dvh w-72 max-w-[85vw] bg-lino shadow-xl flex flex-col p-6 gap-1 overflow-y-auto"
           >
             <div className="flex items-center justify-between mb-4">
               <Marca />
@@ -135,6 +137,6 @@ export default function CategoryNav() {
           </div>
         </div>
       )}
-    </header>
+    </>
   );
 }
