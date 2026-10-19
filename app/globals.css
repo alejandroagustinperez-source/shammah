@@ -9,6 +9,16 @@
   --color-amarillo: #ffeaa7;
   --color-crema: #fdfaf7;
   --color-texto: #4a4a4a;
+  --color-ciruela: #3b2546;
+  --color-ciruela-claro: #4e3659;
+  --color-frambuesa: #a34466;
+  --color-frambuesa-oscuro: #8c3756;
+  --color-lino: #fbf5ee;
+  --color-durazno-suave: #f3e3d6;
+  --color-costura: #d9b3a1;
+  --color-hilo: #3a3140;
+  --color-gris-calido: #5a4e60;
+  --color-niebla: #e6d9ea;
 }
 
 body {
@@ -18,6 +28,10 @@ body {
 
 .font-display {
   font-family: var(--font-pacifico), cursive;
+}
+
+.font-titulo {
+  font-family: var(--font-fraunces), Georgia, serif;
 }
 
 .price-original {

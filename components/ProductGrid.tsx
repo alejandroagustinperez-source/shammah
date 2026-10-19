@@ -3,25 +3,29 @@ import ProductCard from "./ProductCard";
 
 export default function ProductGrid() {
   return (
-    <section className="max-w-5xl mx-auto px-4 py-12">
-      {categories.map((cat) => {
-        const filtered = products.filter((p) => p.category === cat.id);
-        if (filtered.length === 0) return null;
-        return (
-          <div key={cat.id} id={cat.id} className="mb-14 scroll-mt-20">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="text-3xl">{cat.emoji}</span>
-              <h2 className="font-display text-2xl text-[#9b8bb4]">{cat.label}</h2>
-              <div className="flex-1 h-px bg-[#ede0f5]" />
+    <section id="productos" className="px-5 py-20 md:py-24 scroll-mt-20">
+      <div className="max-w-6xl mx-auto flex flex-col gap-14">
+        <h2 className="font-titulo font-semibold text-ciruela text-[32px] md:text-[42px] leading-tight">
+          Nuestros productos
+        </h2>
+        {categories.map((cat) => {
+          const filtered = products.filter((p) => p.category === cat.id);
+          if (filtered.length === 0) return null;
+          return (
+            <div key={cat.id} id={cat.id} className="scroll-mt-24 flex flex-col gap-6">
+              <div className="flex items-center gap-4">
+                <h3 className="font-titulo font-semibold text-ciruela text-2xl md:text-[28px]">{cat.label}</h3>
+                <div aria-hidden="true" className="flex-1 border-t-2 border-dashed border-costura" />
+              </div>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-8 md:gap-x-6">
+                {filtered.map((product) => (
+                  <ProductCard key={product.id} product={product} />
+                ))}
+              </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-4">
-              {filtered.map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
-          </div>
-        );
-      })}
+          );
+        })}
+      </div>
     </section>
   );
 }

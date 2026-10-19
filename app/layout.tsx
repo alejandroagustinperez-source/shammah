@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Nunito, Pacifico } from "next/font/google";
+import { Nunito, Pacifico, Fraunces } from "next/font/google";
 import Script from "next/script";
 import CategoryNav from "@/components/CategoryNav";
 import "./globals.css";
@@ -8,6 +8,13 @@ const nunito = Nunito({
   subsets: ["latin"],
   variable: "--font-nunito",
   weight: ["400", "600", "700", "800"],
+});
+
+const fraunces = Fraunces({
+  subsets: ["latin"],
+  variable: "--font-fraunces",
+  weight: ["500", "600"],
+  style: ["normal", "italic"],
 });
 
 const pacifico = Pacifico({
@@ -42,7 +49,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="es">
-      <body className={`${nunito.variable} ${pacifico.variable} font-nunito antialiased`}>
+      <body className={`${nunito.variable} ${pacifico.variable} ${fraunces.variable} font-nunito antialiased`}>
         <CategoryNav />
         <div className="pt-16">{children}</div>
         <Script id="microsoft-clarity" strategy="afterInteractive">
