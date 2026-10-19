@@ -1,110 +1,58 @@
+import Link from "next/link";
 import { bundles, getWhatsAppUrl } from "@/data/products";
 
 export default function BundleSection() {
   return (
-    <section id="conjuntos" className="bg-gradient-to-b from-[#fdf0eb] to-[#fdfaf7] py-14 px-4 scroll-mt-20">
-      <div className="max-w-5xl mx-auto">
-        <div className="flex items-center gap-3 mb-8">
-          <span className="text-3xl">🎁</span>
-          <h2 className="font-black text-[#3d2c4e] text-2xl">Conjuntos Especiales</h2>
-          <div className="flex-1 h-px bg-[#f5c8bb]" />
+    <section id="conjuntos" className="bg-durazno-suave px-5 py-20 md:py-24 scroll-mt-20">
+      <div className="max-w-6xl mx-auto flex flex-col gap-9">
+        <div className="flex flex-col gap-2">
+          <h2 className="font-titulo font-semibold text-ciruela text-[32px] md:text-[42px] leading-tight">
+            Conjuntos para regalar
+          </h2>
+          <p className="text-gris-calido text-[17px]">Listos para un baby shower o para recibir al bebé.</p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {bundles.map((bundle) => {
-            const discount = Math.round(
-              ((bundle.originalPrice - bundle.currentPrice) / bundle.originalPrice) * 100
-            );
-            return (
-              <div
-                key={bundle.id}
-                className="bg-white rounded-3xl border border-[#ede8f5] shadow-sm overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1"
-              >
-                <div className="bg-gradient-to-r from-[#fde8e2] to-[#ede0f5] px-6 py-5">
-                  <div className="flex items-start justify-between">
-                    <h3 className="font-black text-xl text-[#3d2c4e]">{bundle.name}</h3>
-                    {discount > 0 && (
-                      <span className="badge-descuento">-{discount}%</span>
-                    )}
-                  </div>
-                  <p className="text-[#9a7a7a] text-sm mt-1">{bundle.description}</p>
-                </div>
-                <div className="px-6 py-4">
-                  <p className="text-xs font-semibold text-[#b0b0b0] uppercase tracking-wide mb-2">
-                    Incluye
-                  </p>
-                  <ul className="text-sm text-[#7a7a7a] space-y-1 mb-4">
-                    {bundle.includes.map((item, i) => (
-                      <li key={i} className="flex items-center gap-1.5">
-                        <span className="text-[#25d366]">✓</span>
-                        {item}
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="flex items-baseline gap-2 mb-4">
-                    {bundle.originalPrice > bundle.currentPrice && (
-                      <span className="price-original text-sm">
-                        ${bundle.originalPrice.toLocaleString("es-AR")}
-                      </span>
-                    )}
-                    <span className="text-2xl font-extrabold text-[#c0614a]">
-                      ${bundle.currentPrice.toLocaleString("es-AR")}
-                    </span>
-                  </div>
-                  
-                    <a
-                    href={getWhatsAppUrl(bundle.whatsappMessage)}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center justify-center gap-2 w-full bg-[#3d2c4e] hover:bg-[#5a3d70] text-white font-bold py-3 px-4 rounded-full transition-all hover:scale-105"
-                  >
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" />
-                      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.534 5.857L.057 23.882a.5.5 0 0 0 .61.61l6.025-1.477A11.955 11.955 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.907 0-3.694-.513-5.228-1.407l-.374-.222-3.88.952.972-3.878-.234-.384A9.955 9.955 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z" />
-                    </svg>
-                    Pedir conjunto por WhatsApp
-                  </a>
-                </div>
-              </div>
-            );
-          })}
-          {/* Card de combo personalizado */}
-          <div            className="bg-[#fdfaf7] rounded-3xl border-2 border-dashed border-[#c9b8e8] shadow-sm overflow-hidden hover:shadow-lg transition-all hover:-translate-y-1 flex flex-col">
-            <div className="bg-gradient-to-r from-[#ede0f5] to-[#fde8e2] px-6 py-5">
-              <h3 className="font-black text-xl text-[#3d2c4e]">🛒 Armá tu propio combo</h3>
-              <p className="text-[#9a7a7a] text-sm mt-1">
-                Elegí los productos que quieras y calculá el precio al instante
-              </p>
-            </div>
-            <div className="px-6 py-4 flex flex-col flex-1">
-              <p className="text-xs font-semibold text-[#b0b0b0] uppercase tracking-wide mb-2">
-                ¿Cómo funciona?
-              </p>
-              <ul className="text-sm text-[#7a7a7a] space-y-1 mb-4 flex-1">
-                <li className="flex items-center gap-1.5">
-                  <span className="text-[#d4b8e0]">✦</span>
-                  Seleccioná los productos que más te gusten
-                </li>
-                <li className="flex items-center gap-1.5">
-                  <span className="text-[#d4b8e0]">✦</span>
-                  Elegí las cantidades de cada uno
-                </li>
-                <li className="flex items-center gap-1.5">
-                  <span className="text-[#d4b8e0]">✦</span>
-                  Envianos el pedido por WhatsApp
-                </li>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {bundles.map((bundle) => (
+            <div
+              key={bundle.id}
+              className="bg-lino rounded-[28px] p-7 md:p-8 border-2 border-dashed border-costura flex flex-col gap-4"
+            >
+              <h3 className="font-titulo text-[26px] font-semibold text-ciruela">{bundle.name}</h3>
+              <p className="text-gris-calido">{bundle.description}</p>
+              <ul className="list-disc pl-5 flex flex-col gap-1 text-hilo">
+                {bundle.includes.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
-              <a
-                href="/combo"
-                className="flex items-center justify-center gap-2 w-full bg-[#d4b8e0] hover:bg-[#c4a8d0] text-white font-bold py-3 px-4 rounded-full transition-all hover:scale-105"
-              >
-                Armar combo
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M5 12h14" />
-                  <path d="m12 5 7 7-7 7" />
-                </svg>
-              </a>
+              <div className="mt-auto pt-2 flex flex-wrap items-center justify-between gap-4">
+                <span className="text-[28px] font-bold text-hilo">${bundle.currentPrice.toLocaleString("es-AR")}</span>
+                <a
+                  href={getWhatsAppUrl(`Hola Shammah Bebé! Me interesa el ${bundle.name}.`)}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center min-h-[50px] px-6 rounded-full bg-ciruela text-lino font-bold hover:bg-ciruela-claro transition-colors"
+                >
+                  Pedir este conjunto
+                </a>
+              </div>
             </div>
+          ))}
+        </div>
+
+        <div className="bg-ciruela text-lino rounded-[28px] p-7 md:p-8 flex flex-wrap items-center justify-between gap-5">
+          <div className="flex-[1_1_340px] min-w-0 flex flex-col gap-1.5">
+            <h3 className="font-titulo text-[26px] font-semibold">Armá tu propio combo</h3>
+            <p className="text-niebla">
+              Elegí los productos y las cantidades, mirá el total al instante y mandanos el pedido por WhatsApp.
+            </p>
           </div>
+          <Link
+            href="/combo"
+            className="inline-flex items-center min-h-[52px] px-7 rounded-full bg-frambuesa hover:bg-frambuesa-oscuro text-white font-bold transition-colors"
+          >
+            Armar mi combo
+          </Link>
         </div>
       </div>
     </section>
