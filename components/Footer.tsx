@@ -35,9 +35,21 @@ export default function Footer() {
             <span>Mercado Pago, transferencia o efectivo</span>
           </div>
         </div>
-        <p className="text-sm text-[#b9a6c0] border-t border-white/10 pt-6">
-          &copy; {new Date().getFullYear()} Shammah Bebé.
-        </p>
+        <div className="flex flex-wrap justify-between gap-3 text-sm text-[#b9a6c0] border-t border-white/10 pt-6">
+          <p>&copy; {new Date().getFullYear()} Shammah Bebé.</p>
+          <p>
+            Sitio hecho por{" "}
+            <a
+              href="https://ap-cm.vercel.app/"
+              target="_blank"
+              rel="noopener"
+              title="Diseño de páginas web en San Luis"
+              className="text-niebla hover:text-white underline underline-offset-2"
+            >
+              AP Community Manager
+            </a>
+          </p>
+        </div>
       </div>
     </footer>
   );
